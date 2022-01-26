@@ -1,0 +1,30 @@
+:root{
+    --tr-red: #dc3545;
+    --tr-orange: #fd7e14;
+    --tr-yellow: #ffc107;
+    --tr-green: #198754;
+    --tr-teal: #008080;
+    --tr-white: #fff;
+    --tr-gray: #6c757d;
+    --tr-light-gray: #c2c9ce;
+    --tr-gray-dark: #343a40;
+    --tr-primary: #0f1657;
+    /* --tr-primary: #072227; */
+    /* --tr-primary:#655D8A; */
+    /* --tr-secondary: #6c757d; */
+    --tr-secondary: #575c89;
+    --tr-success: #198754;
+    --tr-info: #0dcaf0;
+    --tr-warning: #ffc107;
+    --tr-error: #dc3545;
+    --tr-light: #f8f9fa;
+    --tr-dark: #212529;
+    --tr-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --tr-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --tr-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --tr-box-shadow:inset 0px 0px 5px rgba(0,0,0,0.2), inset 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.3);
+    --tr-bg-teal-light: hsla(180, 100%, 25%,0.2); 
+    --tr-bg-teal-dark: hsla(180, 100%, 25%,0.4); 
+    --tr-bg-dark-overlay: rgba(0,0,0,0.4);
+    
+}

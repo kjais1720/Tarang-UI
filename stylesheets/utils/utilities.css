@@ -1,0 +1,175 @@
+/* Borders */
+
+.bd1{
+    border:solid 1px;
+}
+
+.bd2{
+    border:solid 2px;
+}
+.bd3{
+    border:solid 3px;
+}
+.bd4{
+    border:solid 4px;
+}
+.bd5{
+    border:solid 5px;
+}
+
+.bd-red{
+    border-color:var(--tr-red);
+}
+
+.bd-green{
+    border-color:var(--tr-green);
+}
+
+.bd-blue{
+    border-color:var(--tr-blue);
+}
+
+.bd-orange{
+    border-color:var(--tr-orange);
+}
+
+
+/* Paddings */
+
+.pd10{
+    padding: 0.625rem;
+}
+
+.pd20{
+    padding: 1.25rem;
+}
+
+.pd30{
+    padding: 1.875rem;
+}
+
+/* Gutters */
+.gap10{
+    gap: .625rem;
+}
+
+.gap20{
+    gap: 1.25rem;
+}
+
+.gap30{
+    gap: 1.875rem;
+}
+
+/* Display */
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-inline-flex{
+    display: inline-flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.hide{
+    display: none;
+}
+
+/* Positions */
+
+.p-abs{
+    position: absolute;
+}
+
+.p-rel{
+    position: relative;
+}
+
+.p-fixed{
+    position: fixed;
+}
+
+.p-sticky{
+    position: sticky;
+}
+
+/* Alignments */
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.centered{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hor-centered{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ver-centered{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Align-children */
+
+.children-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.children-stacked{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+
+.txt-primary{
+    color: var(--tr-primary);
+}
+
+.txt-secondary{
+    color: var(--tr-secondary);
+}
+
+.txt-error{
+    color: var(--tr-error);
+}
+
+.txt-warn{
+    color: var(--tr-warning);
+}
+
+.txt-success{
+    color: var(--tr-success);
+}
