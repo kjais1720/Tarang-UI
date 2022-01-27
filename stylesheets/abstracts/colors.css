@@ -1,0 +1,7 @@
+:root{
+    --tr-primary-color:#0f1657;
+    --tr-secondary-color: #008080;
+    --tr-background:#fff;
+    --tr-text:#343a1a;
+    --tr-accent: linear-gradient(45deg, #0f1657, #008080);
+}

@@ -152,7 +152,8 @@
     flex-direction: column;
 }
 
-/* Typography */
+
+/******************** Typography ******************/
 
 .txt-primary{
     color: var(--tr-primary);
@@ -172,4 +173,50 @@
 
 .txt-success{
     color: var(--tr-success);
+}
+
+
+/* Text Sizes */
+
+.txt-sm{
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+
+.txt-md{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.txt-lg{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.txt-xlg{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.txt-xxlg{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+/* Text weight */
+
+.txt-light{
+    font-weight: 300;
+}
+
+.txt-regular{
+    font-weight: 400;
+}
+
+.txt-semibold{
+    font-weight: 600;
+}
+
+.txt-bold{
+    font-weight: 800;
 }
