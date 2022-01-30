@@ -1,7 +1,15 @@
 :root{
     --tr-primary-color:#0f1657;
+    --tr-primary-darker: #0e144e;
+    --tr-primary-lighter: #575c89;
+    --tr-diabled-color: #c3c5d5;
+
     --tr-secondary-color: #008080;
+    --tr-secondary-darker: #006060;
+    --tr-secondary-lighter: #99cccc;
+
     --tr-background:#fff;
     --tr-text:#343a1a;
+
     --tr-accent: linear-gradient(45deg, #0f1657, #008080);
 }
