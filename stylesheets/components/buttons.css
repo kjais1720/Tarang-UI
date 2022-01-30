@@ -1,0 +1,184 @@
+.tr-btn{
+    padding: var(--space-xs) var(--space-sm);
+    border: none;
+    outline: none;
+    background-color: var(--tr-gray);
+    color: var(--tr-text-on-dark);
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-md);
+    transition: all ease 0.3s;
+
+}
+
+.tr-btn:hover{
+    background-color: var(--tr-gray-dark);
+}
+
+.tr-btn:focus{
+    box-shadow: 0 0 0px 4px var(--tr-gray-overlay);
+}
+
+
+/* Primary button */
+
+.tr-btn-primary{
+    background-color: var(--tr-primary-color);
+}
+
+.tr-btn-primary:hover{
+    background-color: var(--tr-primary-darker);
+}
+
+.tr-btn-primary:focus{
+    background-color: var(--tr-primary-darker);
+    box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
+}
+
+/* Secondary buttons */
+
+.tr-btn-secondary{
+    background-color: var(--tr-secondary-color);
+}
+
+.tr-btn-secondary:hover{
+    background-color: var(--tr-secondary-darker);
+}
+
+.tr-btn-secondary:focus{
+    background-color: var(--tr-secondary-darker);
+    box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
+}
+
+/* Accent button */
+
+.tr-btn-cta{
+    background-color: var(--tr-accent-color);
+}
+
+.tr-btn-cta:hover{
+    background-color: var(--tr-accent-darker);
+}
+
+.tr-btn-cta:focus{
+    background-color: var(--tr-accent-darker);
+    box-shadow: 0 0 0 4px var(--tr-accent-overlay);
+}
+
+/* Error button */
+
+.tr-btn-error{
+    background-color: var(--tr-error);
+}
+
+.tr-btn-error:hover{
+    background-color: #ff0000;
+}
+
+.tr-btn-error:focus{
+    background-color: #ff0000;
+    box-shadow: 0 0 0 4px hsla(var(--err), 0.4);
+}
+
+/* Success Button */
+
+.tr-btn-success{
+    background-color: var(--tr-success);
+}
+
+.tr-btn-success:hover{
+    background-color: hsl(152, 69%, 25%);
+}
+
+.tr-btn-success:focus{
+    background-color:hsl(152, 69%, 25%);
+    box-shadow: 0 0 0 4px hsla(120, 100%, 50%,0.4);
+}
+
+/* Link Buttons */
+
+.tr-btn-link{
+    background-color: var(--tr-info);
+    text-decoration: underline; 
+}
+
+.tr-btn-link:hover{
+    background-color: hsl(190, 90%, 45%);
+}
+
+.tr-btn-link:focus{
+    box-shadow: 0 0 0 4px hsla(190, 90%, 45%, 0.4);
+}
+
+
+/* Icon button */
+.tr-btn-icon{
+    background-color: transparent;
+    color: var(--tr-primary-darker);
+    font-size: var(--fs-lg);
+    position: relative;
+}
+
+.tr-btn-icon:hover{
+    background-color: transparent;
+}
+
+.tr-btn-icon:focus{
+    box-shadow: none;
+}
+
+/* To create a central ripple effect */
+.tr-btn-icon::after{
+    height: 1.8em; /* So that the height and width of the after will always be 1.8 times the font-size of the icon & always be a circle*/
+    width: 1.8em;
+    content: '';
+    position: absolute;
+    background-color: var(--tr-primary-overlay);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease 0.3s;
+}
+
+.tr-btn-icon:hover::after, .tr-btn-icon:focus::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Icon & text buttons */
+.tr-btn-icon-label{
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+}
+
+/* Transprent button */
+.tr-btn-transparent{
+    background-color: var(--tr-light);
+    color: var(--tr-text-on-light);
+}
+
+.tr-btn-transparent:hover, .tr-btn-transparent:focus{
+    background-color: var(--tr-accent-overlay);
+}
+
+
+/* Fill on click buttons */
+.tr-btn-fill i{
+    font-weight: 400;
+}
+
+.tr-btn-fill.active i{
+    font-weight: 900;
+}
+
+/* Tabs buttons */
+
+.tr-btn-tab{
+    border-bottom: solid 5px transparent;
+}
+
+.tr-btn-tab.active{
+    box-shadow: none;
+    border-color: var(--tr-accent-color);
+}
