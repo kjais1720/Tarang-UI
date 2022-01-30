@@ -1,17 +1,34 @@
 :root{
-    --tr-white: #fff;
-    --tr-gray: #6c757d;
-    --tr-gray-dark: #343a40;
-    --tr-success: #198754;
-    --tr-info: #0dcaf0;
-    --tr-warning: #ffc107;
-    --tr-error: #dc3545;
-    --tr-light: #f8f9fa;
-    --tr-dark: #212529;
-    --tr-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --tr-box-shadow:inset 0px 0px 5px rgba(0,0,0,0.2), inset 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.3);
-    --tr-bg-teal-light: hsla(180, 100%, 25%,0.2); 
-    --tr-bg-teal-dark: hsla(180, 100%, 25%,0.4); 
-    --tr-bg-dark-overlay: rgba(0,0,0,0.4);
+  
+    /* Spacings */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xlg: 2.5rem;
+    --space-xxl: 4rem;
+
+
+    /* Radius */
+
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-round: 50%;
+
+    /* Font weights */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font sizes */
+    --fs-sm: 0.5rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xlg: 2rem;
+    --fs-xxlg: 3.5rem;
     
 }

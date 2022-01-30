@@ -1,7 +1,7 @@
 
 /************ Typography *************/
 
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@400;500;600&family=Poppins&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@400;500;600&family=Poppins&family=Raleway:wght@600&display=swap');
 
 h1{
     font-size: 2rem;
@@ -24,5 +24,10 @@ h3{
 p{
     font-size: 1rem;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* font-family: serif; */
     font-family: 'Montserrat', sans-serif;
 }
