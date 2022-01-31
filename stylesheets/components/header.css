@@ -1,0 +1,78 @@
+.tr-header{
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--tr-primary-color);
+    color: var(--tr-white);
+    font-size: var(--fs-md);
+    width: 100%;
+    align-items: center;
+    border-radius: 0 0 var(--space-md) var(--space-md);
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tr-heading h2{
+    font-size: var(--fs-xlg);
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xlg));
+}
+
+.tr-nav{
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.tr-nav a,
+.hamburger
+{
+    font-size: var(--fs-md);
+    color: var(--tr-light);
+    color: var(--tr-accent-color);
+    font-weight: 500;
+}
+
+.tr-nav a:hover i,
+.tr-nav a:focus i,
+.hamburger:hover i,
+.hamburger:focus i
+{
+    transition-delay: 0.1s;
+    color: var(--tr-primary-color);
+}
+
+.tr-nav a:hover::before,
+.tr-nav a:focus::before,
+.hamburger:hover::before,
+.hamburger:focus::before
+{
+    background-color: var(--tr-light);
+}
+
+/************ Fixed Heaeder **************/
+
+.tr-header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/************ Prominent Heaeder **************/
+
+.tr-header-prominent{
+    flex-wrap: wrap;
+}
+
+.tr-header-prominent .tr-heading{
+    flex-grow:1;
+    order: 1;
+    flex-basis: 100%;
+}
+
+/************ Short Header **************/
+.tr-header-short{
+    border-radius: 0 0 var(--radius-lg) 0;
+    width: fit-content;
+}
+
+.tr-header-short .tr-heading{
+    display: none;
+}
