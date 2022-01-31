@@ -2,13 +2,13 @@
     /* --tr-primary-color:hsl(234, 71%, 30%);
     --tr-primary-darker: hsl(234, 70%, 18%); */
     --tr-primary-color:hsl(234, 71%, 25%);
-    --tr-primary-darker:hsl(234, 71%, 35%);
+    --tr-primary-darker:hsl(234, 71%, 18%);
     
     --tr-secondary-color: hsl(234, 22%, 44%);
     --tr-secondary-darker: hsl(234, 22%, 55%);
 
-    --tr-accent-color: hsl(180, 100%, 25%);
-    --tr-accent-darker: hsl(180, 100%, 20%);
+    --tr-accent-color: hsl(180, 100%, 40%);
+    --tr-accent-darker: hsl(180, 100%, 30%);
 
     --tr-diabled-color: hsl(233, 18%, 80%);
     

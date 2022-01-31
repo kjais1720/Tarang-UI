@@ -3,7 +3,6 @@
 .bd1{
     border:solid 1px;
 }
-
 .bd2{
     border:solid 2px;
 }
@@ -31,34 +30,6 @@
 
 .bd-orange{
     border-color:var(--tr-orange);
-}
-
-
-/* Paddings */
-
-.pd10{
-    padding: 0.625rem;
-}
-
-.pd20{
-    padding: 1.25rem;
-}
-
-.pd30{
-    padding: 1.875rem;
-}
-
-/* Gutters */
-.gap10{
-    gap: .625rem;
-}
-
-.gap20{
-    gap: 1.25rem;
-}
-
-.gap30{
-    gap: 1.875rem;
 }
 
 /* Display */

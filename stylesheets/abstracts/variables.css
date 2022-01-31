@@ -16,6 +16,10 @@
     --radius-lg: 15px;
     --radius-round: 50%;
 
+    /* Font Family */
+
+    --ff-Heading:"Montserrat-Alternates";
+
     /* Font weights */
 
     --fw-light: 300;

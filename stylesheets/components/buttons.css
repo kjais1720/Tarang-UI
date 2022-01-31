@@ -97,12 +97,28 @@
 /* Link Buttons */
 
 .tr-btn-link{
+    background-color: transparent;
+    position: relative;
+}
+
+.tr-btn-link::after{
+    position: absolute;
+    content: '';
+    bottom: 10%;
+    left: 51%;
+    right: 51%;
+    height: 3px;
     background-color: var(--tr-info);
-    text-decoration: underline; 
+    transition: all ease 0.2s;
 }
 
 .tr-btn-link:hover{
-    background-color: hsl(190, 90%, 45%);
+    background-color: transparent;
+}
+
+.tr-btn-link:hover::after{
+    left: 10%;
+    right: 10%;
 }
 
 .tr-btn-link:focus{
@@ -126,8 +142,13 @@
     box-shadow: none;
 }
 
+.tr-btn-icon >*{
+    position: relative;
+    z-index: 1;
+}
+
 /* To create a central ripple effect */
-.tr-btn-icon::after{
+.tr-btn-icon::before{
     height: 1.8em; /* So that the height and width of the after will always be 1.8 times the font-size of the icon & always be a circle*/
     width: 1.8em;
     content: '';
@@ -138,9 +159,10 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: all ease 0.3s;
+    /* z-index: -1; */
 }
 
-.tr-btn-icon:hover::after, .tr-btn-icon:focus::after{
+.tr-btn-icon:hover::before, .tr-btn-icon:focus::before{
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -154,7 +176,7 @@
 
 /* Transprent button */
 .tr-btn-transparent{
-    background-color: var(--tr-light);
+    background-color: transparent;
     color: var(--tr-text-on-light);
 }
 
