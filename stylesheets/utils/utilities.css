@@ -151,28 +151,23 @@
 /* Text Sizes */
 
 .txt-sm{
-    font-size: 0.5rem;
-    line-height: 1rem;
+    font-size: var(--fs-sm);
+    line-height: var(--fs-md);
 }
 
 .txt-md{
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: var(--fs-md);
+    line-height: var(--fs-lg);
 }
 
 .txt-lg{
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: var(--fs-lg);
+    line-height: var(--fs-xlg);
 }
 
 .txt-xlg{
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-
-.txt-xxlg{
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: var(--fs-xlg);
+    line-height: var(--fs-xxlg);
 }
 
 /* Text weight */
@@ -191,4 +186,17 @@
 
 .txt-bold{
     font-weight: 800;
+}
+
+
+/* Background overlay */
+.modal-wrapper.active{
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: var(--tr-gray-overlay);
+}
+
+.f-wrap{
+    flex-wrap: wrap;
 }
