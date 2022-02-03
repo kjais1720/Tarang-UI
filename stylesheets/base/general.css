@@ -4,30 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@400;500;600&family=Poppins&family=Raleway:wght@600&display=swap');
 
 h1{
-    font-size: 2rem;
+    font-size: var(--fs-xlg);
     font-weight: 700;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: var(--fs-lg);
     font-weight:500;
     font-family: 'Montserrat', sans-serif;
 }
 
 h3{
-    font-size: 1rem;
+    font-size: var(--fs-md);
     font-weight: 500;
     color: var(--tr-gray);
 }
 
 p{
-    font-size: 1rem;
+    font-size: var(--fs-md);
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--tr-secondary-color);
 }
 
 body{
-    /* font-family: serif; */
     font-family: 'Montserrat', sans-serif;
 }

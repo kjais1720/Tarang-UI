@@ -6,7 +6,7 @@
     --space-md: 1.5rem;
     --space-lg: 2rem;
     --space-xlg: 2.5rem;
-    --space-xxl: 4rem;
+    --space-xxlg: 4rem;
 
 
     /* Radius */
@@ -18,7 +18,7 @@
 
     /* Font Family */
 
-    --ff-Heading:"Montserrat-Alternates";
+    --ff-Heading:"Montserrat-Alternates", sans-serif;
 
     /* Font weights */
 
@@ -33,6 +33,6 @@
     --fs-md: 1rem;
     --fs-lg: 1.5rem;
     --fs-xlg: 2rem;
-    --fs-xxlg: 3.5rem;
+    --fs-xxlg: 2.5rem;
     
 }
