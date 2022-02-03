@@ -1,0 +1,68 @@
+.tr-drawer{
+    font-size: var(--fs-md);
+    max-height: 100vh;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--tr-white);
+    min-width: 18rem;
+}
+
+.tr-drawer-header h3{
+    color: var(--tr-gray);
+}
+
+.tr-drawer hr{
+    margin: 5px auto;
+    width: 90%;
+    border: none;
+    border-top: solid 1px var(--tr-gray);
+    
+}
+
+.tr-drawer-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 85%;
+    padding: var(--space-md);
+}
+
+
+/********* Dissmissible drawer **********/
+.tr-drawer-dismissible{
+    width: 0;
+    padding: 0;
+    transition: all ease 0.3s;
+}
+
+.tr-drawer-dismissible.active{
+    width: 18rem;
+}
+
+
+/********* Modal drawer **********/
+
+.tr-drawer-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 99;
+}
+
+.tr-drawer-modal.active{
+    left: 0;
+}
+
+.tr-drawer-modal.active::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 18rem;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: var(--tr-gray-overlay);
+}

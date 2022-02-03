@@ -1,6 +1,4 @@
 :root{
-    /* --tr-primary-color:hsl(234, 71%, 30%);
-    --tr-primary-darker: hsl(234, 70%, 18%); */
     --tr-primary-color:hsl(234, 71%, 25%);
     --tr-primary-darker:hsl(234, 71%, 18%);
     
@@ -41,5 +39,9 @@
     --tr-text:hsl(71, 38%, 16%);
     --tr-text-on-dark: hsl(0, 0%, 100%);
     --tr-text-on-light: hsl(71, 38%, 16%);
+
+    /* Box Shadows */
+    --bs-elevated: 2px 2px 25px 10px hsla(0, 0%, 0%, 0.4);
+    --bs-light: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
 
 }
