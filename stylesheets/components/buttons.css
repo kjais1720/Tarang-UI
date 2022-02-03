@@ -7,7 +7,6 @@
     border-radius: var(--radius-sm);
     font-size: var(--fs-md);
     transition: all ease 0.3s;
-
 }
 
 .tr-btn:hover{
@@ -131,20 +130,30 @@
     background-color: transparent;
     color: var(--tr-primary-darker);
     font-size: var(--fs-lg);
+    color: var(--tr-accent-color);
+    font-weight: 500;
     position: relative;
 }
 
-.tr-btn-icon:hover{
+.tr-btn-icon:hover,
+.tr-btn-icon:focus
+{
     background-color: transparent;
-}
-
-.tr-btn-icon:focus{
+    color: var(--tr-primary-color);
+    transition-delay: 0.1s;
     box-shadow: none;
 }
 
 .tr-btn-icon >*{
     position: relative;
     z-index: 1;
+}
+
+
+.tr-btn-icon:hover::before,
+.tr-btn-icon:focus::before
+{
+    background-color: var(--tr-light);
 }
 
 /* To create a central ripple effect */
