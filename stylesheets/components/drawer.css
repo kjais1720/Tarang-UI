@@ -12,18 +12,15 @@
 }
 
 .tr-drawer hr{
-    margin: 5px auto;
-    width: 90%;
     border: none;
     border-top: solid 1px var(--tr-gray);
+    margin: 5px auto;
+    width: 90%;
     
 }
 
 .tr-drawer-content{
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     overflow-y: auto;
     max-height: 85%;
     padding: var(--space-md);
@@ -50,19 +47,9 @@
     bottom: 0;
     left: -100%;
     z-index: 99;
+    transition: left ease 0.3s;
 }
 
 .tr-drawer-modal.active{
     left: 0;
-}
-
-.tr-drawer-modal.active::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 18rem;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background-color: var(--tr-gray-overlay);
 }

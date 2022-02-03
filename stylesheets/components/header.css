@@ -1,49 +1,27 @@
 .tr-header{
-    padding: var(--space-xs) var(--space-sm);
+    align-items: center;
     background-color: var(--tr-primary-color);
+    border-radius: 0 0 var(--space-md) var(--space-md);
     color: var(--tr-white);
     font-size: var(--fs-md);
-    width: 100%;
-    align-items: center;
-    border-radius: 0 0 var(--space-md) var(--space-md);
     gap: var(--space-sm);
-    flex-wrap: wrap;
+    /* Fallback value for padding */
+    padding: var(--space-sm) var(--space-lg); 
+    padding: var(--space-sm) clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
 }
 
 .tr-heading h2{
-    font-size: var(--fs-xlg);
-    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xlg));
+    /* Fallback value */
+    font-size: var(--fs-xlg); 
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
 }
 
 .tr-nav{
     margin-left: auto;
-    flex-wrap: wrap;
 }
 
-.tr-nav a,
-.hamburger
-{
-    font-size: var(--fs-md);
-    color: var(--tr-light);
+.tr-nav a.tr-btn{
     color: var(--tr-accent-color);
-    font-weight: 500;
-}
-
-.tr-nav a:hover i,
-.tr-nav a:focus i,
-.hamburger:hover i,
-.hamburger:focus i
-{
-    transition-delay: 0.1s;
-    color: var(--tr-primary-color);
-}
-
-.tr-nav a:hover::before,
-.tr-nav a:focus::before,
-.hamburger:hover::before,
-.hamburger:focus::before
-{
-    background-color: var(--tr-light);
 }
 
 /************ Fixed Heaeder **************/
@@ -56,10 +34,6 @@
 }
 
 /************ Prominent Heaeder **************/
-
-.tr-header-prominent{
-    flex-wrap: wrap;
-}
 
 .tr-header-prominent .tr-heading{
     flex-grow:1;
