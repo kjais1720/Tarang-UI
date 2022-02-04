@@ -6,10 +6,7 @@ main.children-stacked {
     gap: var(--space-xxlg);
 }
 
-.tr-header-brand .logo{
-    width: 2rem; 
-}
-
+/* Hero section  */
 .hero {
     flex-wrap: wrap-reverse;
     justify-content: space-between;
@@ -36,6 +33,7 @@ main.children-stacked {
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-lg));
 }
 
+/* CTA Section  */
 .cta-wrapper {
     gap: var(--space-md);
     flex-wrap: wrap;
@@ -60,22 +58,35 @@ main.children-stacked {
     color: var(--tr-white);
 }
 
-.tr-btn-cta i,
-.tr-btn-cta span {
+.tr-btn-cta{
+    gap: 0.3rem;
+}
+
+.tr-btn-cta p{
+    color: var(--tr-white);
+    font-size: inherit;
+}
+
+.tr-btn-cta *{
     transition: all ease 0.3s;
     transform: translateX(0);
 }
 
-.tr-btn-cta i.fas {
+.tr-btn-cta .fas {
     opacity: 0;
 }
 
-.tr-btn-cta:hover i.fas,
-.tr-btn-cta:hover span {
+.tr-btn-cta:hover *{
     opacity: 1;
-    transform: translateX(-5px);
+    transform: translateX(-15px);
 }
 
-.get-started h2 {
+/* Get Started section  */
+
+.get-started{
+    gap: var(--space-lg);
+}
+
+.get-started h2{
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
 }
