@@ -14,17 +14,17 @@ main.children-stacked {
 
 .hero-text {
     gap: var(--space-lg);
-    width:  clamp(20rem, 40vw , 35rem);
+    width: clamp(20rem, 40vw, 35rem);
 }
 
 .hero-banner {
     flex-shrink: 2;
-    width:  clamp(20rem, 40vw , 55rem);
+    width: clamp(20rem, 40vw, 55rem);
 }
 
 .hero-text h1 {
     font-size: var(--fs-xxlg);
-    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw,var(--fs-xxlg));
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
 
 }
 
@@ -40,7 +40,7 @@ main.children-stacked {
     justify-content: center;
 }
 
-.cta-wrapper >* {
+.cta-wrapper>* {
     flex: 1 1 40%;
     text-align: center;
     max-width: 50%;
@@ -58,16 +58,16 @@ main.children-stacked {
     color: var(--tr-white);
 }
 
-.tr-btn-cta{
+.tr-btn-cta {
     gap: 0.3rem;
 }
 
-.tr-btn-cta p{
+.tr-btn-cta p {
     color: var(--tr-white);
     font-size: inherit;
 }
 
-.tr-btn-cta *{
+.tr-btn-cta * {
     transition: all ease 0.3s;
     transform: translateX(0);
 }
@@ -76,17 +76,17 @@ main.children-stacked {
     opacity: 0;
 }
 
-.tr-btn-cta:hover *{
+.tr-btn-cta:hover * {
     opacity: 1;
     transform: translateX(-15px);
 }
 
 /* Get Started section  */
 
-.get-started{
+.get-started {
     gap: var(--space-lg);
 }
 
-.get-started h2{
+.get-started h2 {
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
 }
