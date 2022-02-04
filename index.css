@@ -44,7 +44,7 @@ main.children-stacked {
     flex: 1 1 40%;
     text-align: center;
     max-width: 50%;
-    min-width: 200px;
+    min-width: 12.5rem;
 }
 
 .cta-wrapper .tr-btn-outline {
@@ -78,7 +78,7 @@ main.children-stacked {
 
 .tr-btn-cta:hover * {
     opacity: 1;
-    transform: translateX(-15px);
+    transform: translateX(calc(-1* var(--space-md)));
 }
 
 /* Get Started section  */

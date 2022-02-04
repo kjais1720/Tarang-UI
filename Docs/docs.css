@@ -157,7 +157,7 @@ body {
 }
 
 .copy-btn:hover {
-    color: #008080;
+    color: var(--tr-primary-color);
 }
 
 pre {
