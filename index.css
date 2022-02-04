@@ -1,0 +1,92 @@
+@import url(Docs/docs.css);
+
+main.children-stacked {
+    padding: var(--space-xxlg);
+    padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    gap: var(--space-xxlg);
+}
+
+/* Hero section  */
+.hero {
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+.hero-text {
+    gap: var(--space-lg);
+    width: clamp(20rem, 40vw, 35rem);
+}
+
+.hero-banner {
+    flex-shrink: 2;
+    width: clamp(20rem, 40vw, 55rem);
+}
+
+.hero-text h1 {
+    font-size: var(--fs-xxlg);
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
+
+}
+
+.hero-text p {
+    font-size: var(--fs-lg);
+    font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-lg));
+}
+
+/* CTA Section  */
+.cta-wrapper {
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-wrapper>* {
+    flex: 1 1 40%;
+    text-align: center;
+    max-width: 50%;
+    min-width: 12.5rem;
+}
+
+.cta-wrapper .tr-btn-outline {
+    border: solid 2px var(--tr-primary-color);
+    background-color: transparent;
+    color: var(--tr-primary-color);
+}
+
+.cta-wrapper .tr-btn-outline:hover {
+    background-color: var(--tr-primary-color);
+    color: var(--tr-white);
+}
+
+.tr-btn-cta {
+    gap: 0.3rem;
+}
+
+.tr-btn-cta p {
+    color: var(--tr-white);
+    font-size: inherit;
+}
+
+.tr-btn-cta * {
+    transition: all ease 0.3s;
+    transform: translateX(0);
+}
+
+.tr-btn-cta .fas {
+    opacity: 0;
+}
+
+.tr-btn-cta:hover * {
+    opacity: 1;
+    transform: translateX(calc(-1* var(--space-md)));
+}
+
+/* Get Started section  */
+
+.get-started {
+    gap: var(--space-lg);
+}
+
+.get-started h2 {
+    font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
+}

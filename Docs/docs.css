@@ -1,0 +1,195 @@
+@import url(../stylesheets/main.css);
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/atlas.min.css);
+
+/* Base stylesheet for all the pages */
+
+body {
+    overflow-y: scroll;
+}
+
+/* Components list drawer  */
+.tr-drawer-main {
+    height: 100vh;
+}
+
+.tr-drawer-main .tr-drawer-header {
+    /* To override the padding given to the `tr-header` class */
+    padding: var(--space-sm) var(--space-lg);
+
+}
+
+/* Main Header */
+.main-header {
+    box-shadow: var(--bs-light);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    /* Fallback value for padding */
+    padding: var(--space-sm) var(--space-lg);
+    padding: var(--space-sm) clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+}
+
+/* Designing the logo  */
+.header-brand {
+    font-family: "Montserrat Alternates", sans-serif;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    position: relative;
+    right: 1.25rem;
+}
+
+.logo {
+    width: 3.5rem;
+    position: relative;
+    left: 1.25rem;
+    bottom: 0.3rem;
+}
+
+.header-brand span {
+    position: relative;
+    z-index: 1;
+}
+
+.header-brand span:nth-of-type(2) {
+    color: var(--tr-accent-color);
+}
+
+/*******************Main content**********************/
+
+.main-content {
+    padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    gap: var(--space-xlg);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Buttons to change the preview variant  */
+.toggle-variant-btn {
+    background-color: transparent;
+    color: var(--tr-primary-color);
+    border: solid 1px var(--tr-primary-color);
+}
+
+.toggle-variant-btn:hover {
+    background-color: var(--tr-primary-overlay);
+}
+
+.toggle-variant-btn.active {
+    background-color: var(--tr-primary-color);
+    color: var(--tr-white);
+}
+
+/* Container containing preview and code blocks for component  */
+.main-demo-content {
+    flex: 1 1 70%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.tabs-btn-list {
+    box-shadow: var(--bs-light);
+    width: 100%;
+}
+
+.tabs-btn-list .tr-btn {
+    border-radius: 0;
+    flex: 1;
+}
+
+.tabs-btn-list .tr-btn:hover {
+    background-color: hsla(180, 65%, 48%, 0.2);
+}
+
+.tabs-btn-list .tr-btn:focus {
+    background-color: var(--tr-accent-overlay);
+    box-shadow: none;
+}
+
+.tabs-btn-list .tr-btn.active {
+    border-color: transparent;
+    background-color: hsla(180, 65%, 48%, 0.2);
+}
+
+.bottom-border {
+    background-color: var(--tr-accent-color);
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: all ease 0.3s;
+    width: 50%;
+}
+
+.tab {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    max-height: 70vh;
+    padding: var(--space-xlg);
+    max-width: 100%;
+    position: relative;
+}
+
+.code-blocks {
+    justify-content: start;
+    align-items: start;
+}
+
+.hide {
+    display: none;
+}
+
+.tabs-btn-list .tr-icon-label-btn {
+    justify-content: center;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 0.625rem;
+    top: 3.125rem;
+    font-size: 2rem;
+}
+
+.copy-btn:hover {
+    color: var(--tr-primary-color);
+}
+
+pre {
+    box-shadow: var(--bs-elevated);
+}
+
+pre code {
+    font-size: clamp(var(--fs-sm), -2.875rem + 8.33vw, var(--fs-md));
+}
+
+footer {
+    min-height: 20vh;
+    margin-top: var(--space-xlg);
+    padding-top: var(--space-md);
+    background-color: var(--tr-primary-color);
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    text-align: center;
+}
+
+
+.footer-links {
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.footer-links .tr-btn {
+    font-size: var(--fs-lg);
+    color: var(--tr-accent-color);
+}
+
+footer p {
+    color: var(--tr-white);
+    font-size: var(--fs-md);
+}
