@@ -89,6 +89,7 @@ body {
     max-width: 100%;
     overflow: auto;
     align-items: center;
+    position: relative;
 }
 
 .tabs-btn-list {
@@ -154,10 +155,6 @@ body {
     right: 0.625rem;
     top: 3.125rem;
     font-size: 2rem;
-}
-
-.copy-btn:hover {
-    color: var(--tr-primary-color);
 }
 
 pre {

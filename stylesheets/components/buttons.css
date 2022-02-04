@@ -17,6 +17,17 @@
     box-shadow: 0 0 0px 4px var(--tr-gray-overlay);
 }
 
+.tr-btn.btn-outline{
+    background-color: transparent;
+    color: var(--tr-gray);
+    border: solid 2px var(--tr-gray);
+}
+
+.tr-btn.btn-outline:hover{
+    background-color: var(--tr-gray);
+    color: var(--tr-white);
+}
+
 
 /* Primary button */
 
@@ -33,6 +44,17 @@
     box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
 }
 
+.tr-btn-primary.btn-outline{
+    background-color: transparent;
+    color: var(--tr-primary-color);
+    border: solid 2px var(--tr-primary-color);
+}
+
+.tr-btn-primary.btn-outline:hover{
+    background-color: var(--tr-primary-color);
+    color: var(--tr-white);
+}
+
 /* Secondary buttons */
 
 .tr-btn-secondary{
@@ -46,6 +68,17 @@
 .tr-btn-secondary:focus{
     background-color: var(--tr-secondary-darker);
     box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
+}
+
+.tr-btn-secondary.btn-outline{
+    background-color: transparent;
+    color: var(--tr-secondary-color);
+    border: solid 2px var(--tr-secondary-color);
+}
+
+.tr-btn-secondary.btn-outline:hover{
+    background-color: var(--tr-secondary-color);
+    color: var(--tr-white);
 }
 
 /* Accent button */
@@ -78,6 +111,17 @@
     box-shadow: 0 0 0 4px hsla(var(--err), 0.4);
 }
 
+.tr-btn-error.btn-outline{
+    background-color: transparent;
+    color: var(--tr-error);
+    border: solid 2px var(--tr-error);
+}
+
+.tr-btn-error.btn-outline:hover{
+    background-color: var(--tr-error);
+    color: var(--tr-white);
+}
+
 /* Success Button */
 
 .tr-btn-success{
@@ -93,11 +137,23 @@
     box-shadow: 0 0 0 4px hsla(120, 100%, 50%,0.4);
 }
 
+.tr-btn-success.btn-outline{
+    background-color: transparent;
+    color: var(--tr-success);
+    border: solid 2px var(--tr-success);
+}
+
+.tr-btn-success.btn-outline:hover{
+    background-color: var(--tr-success);
+    color: var(--tr-white);
+}
+
 /* Link Buttons */
 
 .tr-btn-link{
-    background-color: transparent;
+    background-color: var(--tr-primary-color);
     position: relative;
+    color: var(--tr-accent-color);
 }
 
 .tr-btn-link::after{
@@ -112,7 +168,7 @@
 }
 
 .tr-btn-link:hover{
-    background-color: transparent;
+    background-color: var(--tr-primary-color);
 }
 
 .tr-btn-link:hover::after{
@@ -139,7 +195,6 @@
 .tr-btn-icon:focus
 {
     background-color: transparent;
-    color: var(--tr-primary-color);
     transition-delay: 0.1s;
     box-shadow: none;
 }
@@ -153,7 +208,7 @@
 .tr-btn-icon:hover::before,
 .tr-btn-icon:focus::before
 {
-    background-color: var(--tr-light);
+    background-color: var(--tr-accent-overlay);
 }
 
 /* To create a central ripple effect */
@@ -193,23 +248,16 @@
     background-color: var(--tr-accent-overlay);
 }
 
+/* Floating Action Buttons  */
 
-/* Fill on click buttons */
-.tr-btn-fill i{
-    font-weight: 400;
-}
-
-.tr-btn-fill.active i{
-    font-weight: 900;
-}
-
-/* Tabs buttons */
-
-.tr-btn-tab{
-    border-bottom: solid 5px transparent;
-}
-
-.tr-btn-tab.active{
-    box-shadow: none;
-    border-color: var(--tr-accent-color);
+.tr-btn-fab{
+    height: 1.8em;
+    width: 1.8em;
+    display: flex;
+    place-items: center;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
