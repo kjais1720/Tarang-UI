@@ -1,12 +1,12 @@
 .tr-btn{
     padding: var(--space-xs) var(--space-sm);
     border: none;
-    outline: none;
     background-color: var(--tr-gray);
-    color: var(--tr-text-on-dark);
+    color: var(--tr-background);
     border-radius: var(--radius-sm);
     font-size: var(--fs-md);
     transition: all ease 0.3s;
+    font-weight: 500;
 }
 
 .tr-btn:hover{
@@ -17,11 +17,23 @@
     box-shadow: 0 0 0px 4px var(--tr-gray-overlay);
 }
 
+.tr-btn-outline{
+    background-color: transparent;
+    color: var(--tr-gray);
+    border: solid 2px var(--tr-gray);
+}
+
+.tr-btn-outline:hover{
+    background-color: var(--tr-gray);
+    color: var(--tr-white);
+}
+
 
 /* Primary button */
 
 .tr-btn-primary{
     background-color: var(--tr-primary-color);
+    color: var(--tr-text-on-primary-color);
 }
 
 .tr-btn-primary:hover{
@@ -31,6 +43,17 @@
 .tr-btn-primary:focus{
     background-color: var(--tr-primary-darker);
     box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
+}
+
+.tr-btn-outline-primary{
+    background-color: transparent;
+    color: var(--tr-primary-lighter);
+    border: solid 2px var(--tr-primary-color);
+}
+
+.tr-btn-outline-primary:hover{
+    background-color: var(--tr-primary-color);
+    color: var(--tr-white);
 }
 
 /* Secondary buttons */
@@ -48,6 +71,17 @@
     box-shadow: 0 0 0px 4px var(--tr-primary-overlay);
 }
 
+.tr-btn-outline-secondary{
+    background-color: transparent;
+    color: var(--tr-secondary-color);
+    border: solid 2px var(--tr-secondary-color);
+}
+
+.tr-btn-outline-secondary:hover{
+    background-color: var(--tr-secondary-color);
+    color: var(--tr-white);
+}
+
 /* Accent button */
 
 .tr-btn-cta{
@@ -59,8 +93,19 @@
 }
 
 .tr-btn-cta:focus{
-    background-color: var(--tr-accent-darker);
+    background-color: var(--tr-accent-color);
     box-shadow: 0 0 0 4px var(--tr-accent-overlay);
+}
+
+.tr-btn-outline-cta{
+    background-color: transparent;
+    color: var(--tr-accent-color);
+    border: solid 2px var(--tr-accent-color);
+}
+
+.tr-btn-outline-cta:hover{
+    background-color: var(--tr-accent-color);
+    color: var(--tr-white);
 }
 
 /* Error button */
@@ -78,6 +123,17 @@
     box-shadow: 0 0 0 4px hsla(var(--err), 0.4);
 }
 
+.tr-btn-outline-error{
+    background-color: transparent;
+    color: var(--tr-error);
+    border: solid 2px var(--tr-error);
+}
+
+.tr-btn-outline-error:hover{
+    background-color: var(--tr-error);
+    color: var(--tr-white);
+}
+
 /* Success Button */
 
 .tr-btn-success{
@@ -93,11 +149,23 @@
     box-shadow: 0 0 0 4px hsla(120, 100%, 50%,0.4);
 }
 
+.tr-btn-outline-success{
+    background-color: transparent;
+    color: var(--tr-success);
+    border: solid 2px var(--tr-success);
+}
+
+.tr-btn-outline-success:hover{
+    background-color: var(--tr-success);
+    color: var(--tr-white);
+}
+
 /* Link Buttons */
 
 .tr-btn-link{
-    background-color: transparent;
+    background-color: var(--tr-primary-color);
     position: relative;
+    color: var(--tr-accent-color);
 }
 
 .tr-btn-link::after{
@@ -112,7 +180,7 @@
 }
 
 .tr-btn-link:hover{
-    background-color: transparent;
+    background-color: var(--tr-primary-color);
 }
 
 .tr-btn-link:hover::after{
@@ -139,7 +207,6 @@
 .tr-btn-icon:focus
 {
     background-color: transparent;
-    color: var(--tr-primary-color);
     transition-delay: 0.1s;
     box-shadow: none;
 }
@@ -153,7 +220,7 @@
 .tr-btn-icon:hover::before,
 .tr-btn-icon:focus::before
 {
-    background-color: var(--tr-light);
+    background-color: var(--tr-accent-overlay);
 }
 
 /* To create a central ripple effect */
@@ -186,30 +253,22 @@
 /* Transprent button */
 .tr-btn-transparent{
     background-color: transparent;
-    color: var(--tr-text-on-light);
+    color: var(--tr-text);
 }
 
 .tr-btn-transparent:hover, .tr-btn-transparent:focus{
     background-color: var(--tr-accent-overlay);
 }
 
+/* Floating Action Buttons  */
 
-/* Fill on click buttons */
-.tr-btn-fill i{
-    font-weight: 400;
-}
-
-.tr-btn-fill.active i{
-    font-weight: 900;
-}
-
-/* Tabs buttons */
-
-.tr-btn-tab{
-    border-bottom: solid 5px transparent;
-}
-
-.tr-btn-tab.active{
-    box-shadow: none;
-    border-color: var(--tr-accent-color);
+.tr-btn-fab{
+    height: 1.8em;
+    width: 1.8em;
+    font-size: var(--fs-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
 }

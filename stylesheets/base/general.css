@@ -25,7 +25,7 @@ p{
     font-size: var(--fs-md);
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    color: var(--tr-secondary-color);
+    color: var(--tr-text-secondary);
 }
 
 body{
