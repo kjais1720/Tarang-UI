@@ -1,5 +1,22 @@
+const setTheme = () => {
+    let isDarkModeSelected = localStorage.getItem('isDarkMode');
+    const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+    if(isDarkModeSelected===undefined){
+        localStorage.setItem(false)
+    } else{
+        if(isDarkModeSelected === 'true'){
+            document.body.className = '';
+            themeToggleBtn.children[0].classList.replace('fa-moon','fa-sun')
+            document.body.classList.add('dark-mode');
+        } else {
+            themeToggleBtn.children[0].classList.replace('fa-sun','fa-moon')
+            document.body.className = ''
+        }
+    }
+}
+
+//To toggle the main sidebar
 try {
-    //To toggle the main sidebar
     const mainSidebar = document.querySelector("aside.tr-drawer-modal");
     const hamburgers = document.querySelectorAll(".hamburger");
 
@@ -29,8 +46,24 @@ try {
     else throw err;
 }
 
+//To Toggle the color theme
+try{
+    const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+    themeToggleBtn.addEventListener('click', ()=> {
+        let isDarkModeSelected = localStorage.getItem('isDarkMode');
+        isDarkModeSelected =  isDarkModeSelected === 'false' ? true : false;
+        
+        localStorage.isDarkMode = isDarkModeSelected;
+        setTheme();
+    })
+} catch (err) {
+    if (err.message.includes('Cannot read properties of null')) console.error(err);
+    else throw err;
+}
+
+
+//Toggle different variants of the component
 try {
-    //Toggle different variants of the component
     const toggleVariantBtns = document.querySelectorAll('.toggle-variant-btn');
     const tabToggleBtns = document.querySelectorAll('.main-demo-content .tabs-btn-list .tr-btn');
     let currentActiveBlock = 1;
@@ -62,10 +95,8 @@ try {
     else throw err;
 }
 
+// Toggle between preview and code blocks
 try {
-
-    // Toggle between preview and code blocks
-
     let currentActiveTab = document.getElementById('preview-blocks');
     let currentActiveTabBtn = document.querySelectorAll('.tabs-btn-list .tr-btn')[0];
     const tabBtnWrapper = document.querySelector(".tabs-btn-list");
@@ -97,8 +128,8 @@ try {
 }
 
 
+// Button to copy the text of code block
 try {
-    // Button to copy the text of code block
     const copyButton = document.querySelector('.copy-btn');
     const codBlocks = document.querySelectorAll('.code-block');
     copyButton.addEventListener('click', () => {
@@ -119,8 +150,8 @@ try {
     else throw err;
 }
 
+// Highlighting the code snippets
 try {
-    // Highlighting the code snippets
     hljs.highlightAll();
     const codeBlocks = document.querySelectorAll("pre code");
     codeBlocks.forEach((codeBlock) => {
@@ -132,3 +163,5 @@ try {
     if (err.message.includes('Cannot read properties of null')) console.error(err);
     else throw err;
 }
+
+document.onload = setTheme();

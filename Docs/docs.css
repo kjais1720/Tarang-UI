@@ -6,6 +6,15 @@
 
 body {
     overflow-y: scroll;
+    background-color: var(--tr-background);
+    color: var(--tr-text);
+}
+
+.theme-toggle-btn{
+    background-color: var(--tr-text);
+    color: var(--tr-background);
+    bottom: 25px;
+    right: 5px;
 }
 
 /* Components list drawer  */
@@ -24,9 +33,6 @@ body {
     box-shadow: var(--bs-light);
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
-    /* Fallback value for padding */
-    padding: var(--space-sm) var(--space-lg);
-    padding: var(--space-sm) clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
 }
 
 /* Designing the logo  */
@@ -64,17 +70,6 @@ body {
     justify-content: center;
 }
 
-
-/* Buttons to change the preview variant  */
-.toggle-variant-btn {
-    background-color: transparent;
-    color: var(--tr-primary-color);
-    border: solid 1px var(--tr-primary-color);
-}
-
-.toggle-variant-btn:hover {
-    background-color: var(--tr-primary-overlay);
-}
 
 .toggle-variant-btn.active {
     background-color: var(--tr-primary-color);

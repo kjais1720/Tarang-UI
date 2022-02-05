@@ -9,7 +9,7 @@
     align-self: center;
 }
 
-.tr-btn-fab{
+.preview-block .tr-btn-fab{
     font-size: var(--fs-lg);
     font-weight: normal;
     position: relative;
