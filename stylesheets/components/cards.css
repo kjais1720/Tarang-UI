@@ -1,11 +1,3 @@
-/* .cards-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
-    align-items: center;
-    justify-items: center;
-    gap: 1.25rem;
-} */
-
 .tr-card{
     align-self: center;
     padding: var(--space-sm);
