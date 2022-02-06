@@ -23,7 +23,6 @@ body {
 }
 
 .tr-drawer-main .tr-drawer-header {
-    /* To override the padding given to the `tr-header` class */
     padding: var(--space-sm) var(--space-lg);
 
 }
@@ -70,6 +69,9 @@ body {
     justify-content: center;
 }
 
+.component-desc{
+    flex-basis: 100%;
+}
 
 .toggle-variant-btn.active {
     background-color: var(--tr-primary-color);
@@ -125,14 +127,14 @@ body {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-    max-height: 70vh;
     padding: var(--space-xlg);
-    max-width: 100%;
+    width: 100%;
     position: relative;
 }
 
 .code-blocks {
+    overflow: auto;
+    max-height: 80vh;
     justify-content: start;
     align-items: start;
 }

@@ -1,0 +1,129 @@
+.tr-card{
+    align-self: center;
+    padding: var(--space-sm);
+    border-radius: var(--space-xs);
+    background-color: var(--tr-background-lighter);
+    gap: var(--space-xs);
+    max-width: 16rem;
+    position: relative;
+    border: solid 1px var(--tr-gray);
+}
+
+.tr-card-banner img{
+    object-fit: cover;
+    border-radius: var(--space-xs) ;
+}
+
+.tr-card-header h2{
+    color: var(--tr-primary-lighter);
+}
+
+.tr-card-header h3{
+    font-size: 0.9rem;
+}
+
+.tr-card-body p{
+    font-size: .9rem;
+    color: var(--tr-text-secondary);
+}
+
+.pdt-price{
+    gap: ar(--space-sm);
+    align-items: center;
+}
+
+.curr-price{
+    font-size: var(--fs-md);
+    color: var(--tr-success);
+}
+
+.prev-price{
+    font-size: var(--fs-sm);
+    color: var(--tr-text-secondary);
+    text-decoration: line-through;
+}
+
+.tr-card-badge{
+    position: absolute;
+    font-size: .9rem;
+    top: 1.0rem;
+    left: 0;
+    padding: 5px var(--space-md);
+    background-color: var(--tr-accent-color) ;
+    color: var(--tr-text);
+}
+
+.tr-card-badge::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -14px;
+    border: solid 15px var(--tr-accent-color);
+    border-left-color: transparent;
+    position: absolute;
+    left: -15px;
+    z-index: -1;
+}
+
+.tr-card-footer{
+    justify-content: space-between;
+}
+
+.tr-card-footer-links .tr-btn{
+    font-size: 0.8rem;
+}
+
+/******** Cards with dismiss icon *********/
+
+.tr-card-dismiss-icon{
+    position: absolute;
+    background-color: var(--tr-primary-color);
+    top: -5px;
+    right: -5px;
+    font-size: var(--fs-md);
+    border-radius: 50%;
+    padding: 5px;
+    height: 1.8em;
+    width: 1.8em;
+}
+
+/******** Cards with text overlay *********/
+
+.text-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tr-gray-overlay);
+}
+
+.text-overlay h2{
+    width: 100%;
+    background-color: var(--tr-background);
+    text-align: center;
+    font-size: var(--fs-md);
+}
+
+/******** Horizontal card *********/
+
+.tr-card-hor{
+    max-width: 30rem;
+}
+
+.tr-card-hor .tr-card-banner{
+    max-width: 50%;
+}
+
+.tr-card-hor .tr-card-banner img{
+    height: 100%;
+}
+
+.tr-card-footer-links{
+    align-items: stretch;
+}
+
+.tr-card.light-shadow{
+    border: none;
+    box-shadow: var(--bs-light);
+}
