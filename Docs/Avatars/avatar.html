@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatars | Tarang UI</title>
+    <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../docs.css">
+    <link rel="stylesheet" href="../../stylesheets/components/cards.css">
+</head>
+<body>
+            
+    <div class="modal-wrapper">
+        <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
+            <div class="tr-drawer-header tr-header">
+                <h2 class="tr-drawer-heading">Components</h2>
+            </div>
+            <div class="tr-drawer-content">
+                <ul class="children-stacked">
+                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Avatars
+                    </a>
+                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Badges
+                    </a>
+                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Buttons
+                    </a>
+                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Cards
+                    </a>
+
+                    <a href="../Chips/chip.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Chips
+                    </a>
+
+                    <a href="../Drawers/drawer.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Drawers
+                    </a>
+
+                    <a href="../Headers/header.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Headers
+                    </a>
+
+                    <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Image
+                    </a>
+                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Input
+                    </a>
+                </ul>
+                
+            </div>
+        </aside>
+    </div>
+
+    <header class="tr-header main-header d-flex f-wrap">
+        <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
+        <div class="tr-heading">
+            <a href="../../index.html">
+                <h2 class="header-brand">
+                    <img class="logo" src="../../assets/tarang-favicon-2.png" alt="Tarang Logo">
+                    <span>arang</span> <span>UI</span>
+                </h2>
+            </a>
+        </div>
+        <nav class="tr-nav d-flex">
+            <a href="#" class="tr-btn tr-btn-icon-label tr-btn-link">
+                Docs
+                <i class="fas fa-file"></i>
+            </a>
+            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+                Github
+                <i class="fab fa-github"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content d-flex">
+        <div class="component-desc flex-col">
+            <h2>Avatars</h2>
+            <p>
+                Avatars are used to show profile images in headers or profile information sections. They can be in multiple sizes.
+                xs — for extra small, sm — for small, md — for medium, lg — for large, and xl for — extra large.
+                They can be round or squircle in shape.
+            </p>
+        </div>
+        <aside class="tr-drawer">
+            <h2>Variants</h2>
+            <div class="tr-drawer-content">
+                <ul class="flex-col">
+                    <button data-target="1" class="tr-btn tr-btn-outline-primary toggle-variant-btn active">
+                        Circle Avatar
+                    </button>
+                    <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Rounded square Avatar
+                    </button>
+                    <button data-target="3" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Avatars with border
+                    </button>
+                    
+                 </ul>
+                
+            </div>
+        </aside>         
+
+        <div class="main-demo-content d-flex">
+            
+            <div class="tabs-btn-list p-rel d-flex">
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
+                <div class="bottom-border"></div>
+            </div>
+
+            <div id="preview-blocks" class="preview-blocks tab d-flex">
+
+                <div class="preview-block" id="preview-block-1">  
+
+                    <div class="avatar-container flex-center gap-md">
+                        <div class="tr-avatar-circle tr-avatar-xs">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-sm">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-md">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-lg">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-xlg">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="preview-block hide" id="preview-block-2">
+
+                    <div class="avatar-container flex-center gap-md">
+                        <div class="tr-avatar-rounded-square tr-avatar-xs">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-sm">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-md">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-lg">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-xlg">
+                            <img class="tr-avatar-img" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="preview-block hide" id="preview-block-3">
+
+                    <div class="avatar-container flex-center gap-md">
+                        <div class="tr-avatar-rounded-square tr-avatar-xs">
+                            <img class="tr-avatar-img bd-1 bd-green" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-sm">
+                            <img class="tr-avatar-img bd-2 bd-red" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-md">
+                            <img class="tr-avatar-img bd-3 bd-orange" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-circle tr-avatar-lg">
+                            <img class="tr-avatar-img bd-4 bd-blue" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+
+                        <div class="tr-avatar-rounded-square tr-avatar-xlg">
+                            <img class="tr-avatar-img bd-5 bd-green" src="https://picsum.photos/id/633/200/200" alt="avatar image"/>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div id="code-blocks" class="code-blocks tab d-flex hide">
+                
+                <div id="code-block-1" class="code-block">
+<pre><code>
+<div class="tr-avatar-circle tr-avatar-xs">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-sm">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-md">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-lg">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-xlg">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+</code></pre>
+                </div>
+
+                <div id="code-block-2" class="code-block hide">
+<pre><code>
+<div class="tr-avatar-rounded-square tr-avatar-xs">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-sm">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-md">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-lg">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-xlg">
+    <img class="tr-avatar-img" src="Put the image source here" alt="avatar image"/>
+</div>
+
+</code></pre>                  
+                </div>
+
+                <div id="code-block-3" class="code-block hide">
+<pre><code>
+<div class="tr-avatar-rounded-square tr-avatar-xs">
+    <img class="tr-avatar-img bd-1 bd-green" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-sm">
+    <img class="tr-avatar-img bd-2 bd-red" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-md">
+    <img class="tr-avatar-img bd-3 bd-orange" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-circle tr-avatar-lg">
+    <img class="tr-avatar-img bd-4 bd-blue" src="Put the image source here" alt="avatar image"/>
+</div>
+
+<div class="tr-avatar-rounded-square tr-avatar-xlg">
+    <img class="tr-avatar-img bd-5 bd-green" src="Put the image source here" alt="avatar image"/>
+</div>
+
+</code></pre>                  
+                </div>
+
+
+            </div>
+            <button class="tr-btn tr-btn-icon copy-btn"><i class="fas fa-copy"></i></button>
+
+    </main>
+
+    <footer>
+        <ul class="d-flex footer-links">
+            <a target="_blank" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>    
+            </a>
+        </ul>
+        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+    </footer>
+
+    <button class="theme-toggle-btn tr-btn tr-btn-fab">
+        <i class="fas fa-moon"></i>
+    </button>
+    <!-- Highlighting the code snippets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <script src="../docs.js"></script>
+</body>
+</html>

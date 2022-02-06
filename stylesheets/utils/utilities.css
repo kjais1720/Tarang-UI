@@ -1,35 +1,35 @@
 /* Borders */
 
-.bd1{
+.bd-1{
     border:solid 1px;
 }
-.bd2{
+.bd-2{
     border:solid 2px;
 }
-.bd3{
+.bd-3{
     border:solid 3px;
 }
-.bd4{
+.bd-4{
     border:solid 4px;
 }
-.bd5{
+.bd-5{
     border:solid 5px;
 }
 
 .bd-red{
-    border-color:var(--tr-red);
+    border-color:var(--tr-error);
 }
 
 .bd-green{
-    border-color:var(--tr-green);
+    border-color:var(--tr-success);
 }
 
 .bd-blue{
-    border-color:var(--tr-blue);
+    border-color:var(--tr-info);
 }
 
 .bd-orange{
-    border-color:var(--tr-orange);
+    border-color:var(--tr-warning);
 }
 
 /* Display */
