@@ -130,10 +130,10 @@ body {
     padding: var(--space-xlg);
     width: 100%;
     position: relative;
+    overflow: auto;
 }
 
 .code-blocks {
-    overflow: auto;
     max-height: 80vh;
     justify-content: start;
     align-items: start;

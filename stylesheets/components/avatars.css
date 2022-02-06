@@ -1,0 +1,41 @@
+
+.tr-avatar-circle{
+    border-radius: 50%;
+    position: relative;
+}
+
+.tr-avatar-rounded-square{
+    border-radius: 20%;
+    width: fit-content;
+    padding: 0;
+    position: relative;
+}
+
+.tr-avatar-xs{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tr-avatar-sm{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.tr-avatar-md{
+    width: 4rem;
+    height: 4rem;
+}
+
+.tr-avatar-lg{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.tr-avatar-xlg{
+    width: 10rem;
+    height: 10rem;
+}
+
+.tr-avatar-img{
+    border-radius: 50%;
+}
