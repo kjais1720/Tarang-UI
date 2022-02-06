@@ -4,7 +4,7 @@ body{
     background-color: var(--tr-background);
 }
 
-main.children-stacked {
+main {
     padding: var(--space-xxlg);
     padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
     gap: var(--space-xxlg);
