@@ -7,7 +7,7 @@
     gap: var(--space-sm);
     /* Fallback value for padding */
     padding: var(--space-sm) var(--space-lg); 
-    padding: var(--space-sm) clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    padding: var(--space-sm) clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
 }
 
 .tr-heading h2{

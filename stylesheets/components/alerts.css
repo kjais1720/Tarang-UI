@@ -1,0 +1,63 @@
+.tr-alert{
+    --alert-color: var(--tr-red);
+    align-items: center;
+    gap: 1em;
+    width: 80vw;
+    max-width: 40em;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 5px;
+    background-color: var(--tr-background);
+    box-shadow: var(--bs-light);
+    border-left: solid 4px var(--alert-color);
+    font-size: 1rem;
+    z-index: 90;
+}
+
+
+.tr-alert-icon{
+    font-size: 1em;
+    border-radius: 50%;
+    background-color: var(--alert-color);
+    color: var(--tr-background);
+    min-height: 1.8em;
+    min-width: 1.8em;
+    padding: 0;
+    display: grid;
+    place-content: center;
+}
+
+.tr-alert-text{
+    gap: 0.3125em;
+}
+
+.tr-alert-close-btn{
+    font-size: 1em;
+    color: var(--tr-gray);
+    margin-left: auto;
+}
+
+.tr-alert h3{
+    font-size: 1em;
+    color: var(--alert-color);
+}
+
+.tr-alert p{
+    font-size: 1em;
+    color: var(--tr-gray);
+}
+
+.tr-alert-warning{
+    --alert-color: var(--tr-warning);
+}
+
+.tr-alert-success{
+    --alert-color: var(--tr-success);
+}
+
+.tr-alert-info{
+    --alert-color: var(--tr-primary-color);
+}
+
+.tr-alert-error{
+    --alert-color: var(--tr-error);
+}
