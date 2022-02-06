@@ -195,6 +195,7 @@
 
 /* Icon button */
 .tr-btn-icon{
+    padding: 0;
     background-color: transparent;
     color: var(--tr-primary-darker);
     font-size: var(--fs-lg);

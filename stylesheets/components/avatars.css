@@ -37,5 +37,6 @@
 }
 
 .tr-avatar-img{
-    border-radius: 50%;
+    border-radius: inherit;
+    height: 100%;
 }
