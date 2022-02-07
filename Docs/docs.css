@@ -150,13 +150,14 @@ body {
 
 .copy-btn {
     position: absolute;
-    right: 0.625rem;
+    right: 1.5rem;
     top: 3.125rem;
     font-size: 2rem;
 }
 
 pre {
     box-shadow: var(--bs-elevated);
+    min-width: 55vw;
 }
 
 pre code {
