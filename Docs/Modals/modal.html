@@ -95,7 +95,7 @@
         <div class="component-desc flex-col">
             <h2>Modals</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam magni velit ipsam alias consectetur placeat cupiditate voluptatum? Corrupti possimus voluptas quidem minima necessitatibus fuga, molestias sunt neque mollitia blanditiis numquam, explicabo dolorem. Cumque porro, suscipit temporibus ea explicabo placeat eaque autem earum rem repellat velit ipsum nihil hic est. Quasi blanditiis perferendis ad aperiam deleniti fuga odit debitis, magnam iste? Ex ab hic vitae facere nisi. Sunt incidunt, eum vel nemo, rerum recusandae dignissimos explicabo ullam sint rem adipisci harum a voluptate! Eius dicta sed consectetur ratione, expedita quaerat vero! Nihil minus velit alias, soluta exercitationem blanditiis omnis tempora?
+                A modal (also called a modal box) is a web page element that displays in front of and deactivates all other page content. To return to the main content, the user must engage with the modal by completing an action or by closing it. Modals are often used to direct users’ attention to an important action or piece of information on a website or application.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -127,50 +127,51 @@
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
                 <div id="preview-block-1" class="preview-block">          
-                    <article class="tr-dialog-wrapper flex flex-center">
-                        <div class="tr-dialog-box flex-col">
-                            <div class="tr-dialog-text flex-col">
-                                <h2 class="tr-dialog-heading">Dialog 1</h2>
-                                <p class="tr-dialog-subtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <article class="tr-modal-wrapper flex flex-center">
+                        <div class="tr-modal-box flex-col">
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
+                            <div class="tr-modal-text flex-col">
+                                <h2 class="tr-modal-heading">Alert Modal</h2>
+                                <p class="tr-modal-subtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
-                            <div class="tr-dialog-buttons">
-                                <button class="tr-btn tr-btn-secondary">button 1</button>
-                                <button class="tr-btn tr-btn-primary">button 2</button>
+                            <div class="tr-modal-buttons">
+                                <button class="tr-btn tr-btn-secondary">Action 1</button>
+                                <button class="tr-btn tr-btn-primary">Action 2</button>
                             </div>
-                            <button class="tr-dialog-close-btn"><i class="fas fa-times"></i></button>
                         </div>
                     </article> 
 
                 </div>
 
                 <div id="preview-block-2" class="hide preview-block">
-                    <article class="tr-dialog-wrapper tr-dialog-simple flex flex-center">
-                        <div class="tr-dialog-box flex-col">
+                    <article class="tr-modal-wrapper tr-modal-simple flex flex-center">
+                        <div class="tr-modal-box flex-col">
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
                 
-                            <div class="tr-dialog-text flex-col">
-                                <h2>Simple Dialog</h2>
+                            <div class="tr-modal-text flex-col">
+                                <h2>Simple Modal</h2>
                             </div>
                 
-                            <div class="tr-dialog-buttons flex-col gap-md">
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> button 1</button>
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> button 1</button>
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> button 2</button>
+                            <div class="tr-modal-buttons flex-col gap-md">
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 1</button>
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 1</button>
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 2</button>
                             </div>
-                            <button class="tr-dialog-close-btn"><i class="fas fa-times"></i></button>
                         </div>
                     </article>
 
                 </div>
 
                 <div id="preview-block-3" class="hide preview-block">
-                    <article class="tr-dialog-wrapper tr-dialog-confirmation flex flex-center">
-                        <div class="tr-dialog-box flex-col">
+                    <article class="tr-modal-wrapper tr-modal-confirmation flex flex-center">
+                        <div class="tr-modal-box flex-col">
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
                 
-                            <div class="tr-dialog-text flex-col gap-lg">
-                                <h2>Simple Dialog</h2>
+                            <div class="tr-modal-text flex-col gap-lg">
+                                <h2>Confirmation Modal</h2>
                             </div>
                 
-                            <div class="tr-dialog-options flex-col gap-md">
+                            <div class="tr-modal-options flex-col gap-md">
                                     <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option1">
                                         <input class="tr-input-radio" name="option" type="radio" id="option1">
                                         Option 1
@@ -193,11 +194,10 @@
                 
                             </div>
                 
-                            <div class="tr-dialog-buttons flex gap10">
-                                <button class="tr-btn tr-icon-label-btn tr-btn-transparent"> <i class="fa fa-times-circle"></i> Cancel</button>
-                                <button class="tr-btn tr-icon-label-btn tr-btn-transparent"> <i class="fa fa-check-circle"></i> Confirm</button>
+                            <div class="tr-modal-buttons flex gap10">
+                                <button class="tr-btn tr-icon-label-btn tr-btn-error"> <i class="fa fa-times-circle"></i> Cancel</button>
+                                <button class="tr-btn tr-icon-label-btn tr-btn-success"> <i class="fa fa-check-circle"></i> Confirm</button>
                             </div>
-                            <button class="tr-dialog-close-btn"><i class="fas fa-times"></i></button>
                         </div>
                     </article>                    
 
@@ -208,20 +208,20 @@
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
 <pre><code>
-    <article class="tr-dialog-wrapper flex flex-center">
-        <div class="tr-dialog-box flex-col">
-            <div class="tr-dialog-text flex-col">
-                <h2 class="tr-dialog-heading">Dialog 1</h2>
-                <p class="tr-dialog-subtext">
+    <article class="tr-modal-wrapper flex flex-center">
+        <div class="tr-modal-box flex-col">
+            <div class="tr-modal-text flex-col">
+                <h2 class="tr-modal-heading">modal 1</h2>
+                <p class="tr-modal-subtext">
                     Lorem, ipsum dolor sit 
                     amet consectetur adipisicing elit.
                 </p>
             </div>
-            <div class="tr-dialog-buttons">
+            <div class="tr-modal-buttons">
                 <button class="tr-btn tr-btn-secondary">button 1</button>
                 <button class="tr-btn tr-btn-primary">button 2</button>
             </div>
-            <button class="tr-dialog-close-btn">
+            <button class="tr-modal-close-btn">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -231,14 +231,14 @@
                 </div>
                 <div id="code-block-2" class="code-block hide">
 <pre><code>
-    <article class="tr-dialog-wrapper tr-dialog-simple flex flex-center">
-        <div class="tr-dialog-box flex-col">
+    <article class="tr-modal-wrapper tr-modal-simple flex flex-center">
+        <div class="tr-modal-box flex-col">
 
-            <div class="tr-dialog-text flex-col">
-                <h2>Simple Dialog</h2>
+            <div class="tr-modal-text flex-col">
+                <h2>Simple modal</h2>
             </div>
 
-            <div class="tr-dialog-buttons flex-col gap-md">
+            <div class="tr-modal-buttons flex-col gap-md">
                 <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> 
                     <i class="fa fa-user"></i> button 1
                 </button>
@@ -249,7 +249,7 @@
                     <i class="fa fa-user"></i> button 2
                 </button>
             </div>
-            <button class="tr-dialog-close-btn">
+            <button class="tr-modal-close-btn">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -259,14 +259,14 @@
                 </div>
                 <div id="code-block-3" class="code-block hide">
 <pre><code>
-    <article class="tr-dialog-wrapper tr-dialog-confirmation flex flex-center">
-        <div class="tr-dialog-box flex-col">
+    <article class="tr-modal-wrapper tr-modal-confirmation flex flex-center">
+        <div class="tr-modal-box flex-col">
 
-            <div class="tr-dialog-text flex-col gap-lg">
-                <h2>Simple Dialog</h2>
+            <div class="tr-modal-text flex-col gap-lg">
+                <h2>Simple modal</h2>
             </div>
 
-            <div class="tr-dialog-options flex-col gap-md">
+            <div class="tr-modal-options flex-col gap-md">
                     <label class="tr-btn tr-btn-transparent d-flex gap-lg">
                         <input class="tr-input-radio" name="option" type="radio">
                         Option 1
@@ -289,7 +289,7 @@
 
             </div>
 
-            <div class="tr-dialog-buttons flex gap10">
+            <div class="tr-modal-buttons flex gap10">
                 <button class="tr-btn tr-icon-label-btn tr-btn-transparent"> 
                     <i class="fa fa-times-circle"></i> Cancel
                 </button>
@@ -297,7 +297,7 @@
                     <i class="fa fa-check-circle"></i> Confirm
                 </button>
             </div>
-            <button class="tr-dialog-close-btn">
+            <button class="tr-modal-close-btn">
                 <i class="fas fa-times"></i>
             </button>
         </div>

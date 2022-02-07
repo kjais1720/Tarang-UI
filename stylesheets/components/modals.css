@@ -1,15 +1,15 @@
 
-.tr-dialog-wrapper{
+.tr-modal-wrapper{
     position: absolute;
     inset: 0;
-    background-color: var(--tr-bg-dark-overlay);
+    background-color: var(--tr-gray-overlay);
     display: flex;
     font-size: 1rem;
     max-height: 100vh;
     overflow-y: auto;
 }
 
-.tr-dialog-box{
+.tr-modal-box{
     background-color: var(--tr-background);
     color: var(--tr-text);
     box-shadow: var(--bs-light);
@@ -20,36 +20,38 @@
     position: relative;
 }
 
-.tr-dialog-text h2{
+.tr-modal-text h2{
     font-size: 1.5rem;
 }
 
-.tr-dialog-text p{
+.tr-modal-text p{
     font-size: 1rem;
 }
 
-.tr-dialog-buttons{
+.tr-modal-buttons{
     text-align: right;
 }
 
-.tr-dialog-buttons .tr-btn{
+.tr-modal-buttons .tr-btn{
     border-radius: var(--space-xs);
 }
 
-.tr-dialog-close-btn{
-    position: absolute;
+.tr-modal-close-btn-wrapper{
+    text-align: right;
+    margin-bottom: -1.5rem;
+}
+
+.tr-modal-close-btn{
     border: none;
     background-color: transparent;
-    right: 5%;
-    top: 5%;
     color: var(--tr-text);
 }
 
-.tr-dialog-options{
+.tr-modal-options{
     max-height: 150px;
     overflow-y: auto;
 }
 
-.tr-dialog-options .tr-btn{
+.tr-modal-options .tr-btn{
     align-items: center;
 }
