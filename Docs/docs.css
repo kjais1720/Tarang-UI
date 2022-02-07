@@ -63,7 +63,7 @@ body {
 /*******************Main content**********************/
 
 .main-content {
-    padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    padding: clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
     gap: var(--space-xlg);
     flex-wrap: wrap;
     justify-content: center;
