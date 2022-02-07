@@ -134,6 +134,12 @@ body {
     overflow: auto;
 }
 
+.preview-block,
+.code-block
+{
+    width: 100%;
+}
+
 .code-blocks {
     max-height: 80vh;
     justify-content: start;
