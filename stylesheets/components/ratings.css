@@ -1,6 +1,5 @@
 .tr-ratings-wrapper .fa-star{
     color: var(--tr-warning);
-    /* font-size: var(--fs-sm); */
     font-weight: 400;
     cursor: pointer;
 }
@@ -11,7 +10,7 @@
 
 .fa-star.icon-half-filled::before{
     font-family: "Font Awesome 5 pro"; 
-	font-weight: 900;
+    font-weight: 900;
     content: '\f5c0';
 }
 
