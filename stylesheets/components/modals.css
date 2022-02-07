@@ -1,0 +1,57 @@
+
+.tr-modal-wrapper{
+    position: absolute;
+    inset: 0;
+    background-color: var(--tr-gray-overlay);
+    display: flex;
+    font-size: 1rem;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.tr-modal-box{
+    background-color: var(--tr-background);
+    color: var(--tr-text);
+    box-shadow: var(--bs-light);
+    padding: var(--space-sm);
+    border-radius: var(--space-xs);
+    max-width: 18.75rem;
+    min-width: 17rem;
+    position: relative;
+}
+
+.tr-modal-text h2{
+    font-size: 1.5rem;
+}
+
+.tr-modal-text p{
+    font-size: 1rem;
+}
+
+.tr-modal-buttons{
+    text-align: right;
+}
+
+.tr-modal-buttons .tr-btn{
+    border-radius: var(--space-xs);
+}
+
+.tr-modal-close-btn-wrapper{
+    text-align: right;
+    margin-bottom: -1.5rem;
+}
+
+.tr-modal-close-btn{
+    border: none;
+    background-color: transparent;
+    color: var(--tr-text);
+}
+
+.tr-modal-options{
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.tr-modal-options .tr-btn{
+    align-items: center;
+}
