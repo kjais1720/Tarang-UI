@@ -1,0 +1,55 @@
+
+.tr-dialog-wrapper{
+    position: absolute;
+    inset: 0;
+    background-color: var(--tr-bg-dark-overlay);
+    display: flex;
+    font-size: 1rem;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.tr-dialog-box{
+    background-color: var(--tr-background);
+    color: var(--tr-text);
+    box-shadow: var(--bs-light);
+    padding: var(--space-sm);
+    border-radius: var(--space-xs);
+    max-width: 18.75rem;
+    min-width: 17rem;
+    position: relative;
+}
+
+.tr-dialog-text h2{
+    font-size: 1.5rem;
+}
+
+.tr-dialog-text p{
+    font-size: 1rem;
+}
+
+.tr-dialog-buttons{
+    text-align: right;
+}
+
+.tr-dialog-buttons .tr-btn{
+    border-radius: var(--space-xs);
+}
+
+.tr-dialog-close-btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: 5%;
+    top: 5%;
+    color: var(--tr-text);
+}
+
+.tr-dialog-options{
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.tr-dialog-options .tr-btn{
+    align-items: center;
+}
