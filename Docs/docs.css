@@ -140,6 +140,10 @@ body {
     align-items: start;
 }
 
+.preview-block{
+    width: 100%;
+}
+
 .hide {
     display: none;
 }
