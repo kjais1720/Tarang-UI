@@ -32,6 +32,23 @@
     border-color:var(--tr-warning);
 }
 
+/* Background colors  */
+.bg-primary{
+    background-color: var(--tr-primary-color);
+}
+
+.bg-secondary{
+    background-color: var(--tr-secondary-color);
+}
+
+.bg-accent{
+    background-color: var(--tr-accent-color);
+}
+
+.bg-gray{
+    background-color: var(--tr-gray);
+}
+
 /* Display */
 
 .d-block{
@@ -82,18 +99,6 @@
 
 /* Alignments */
 
-.text-center{
-    text-align: center;
-}
-
-.text-left{
-    text-align: left;
-}
-
-.text-right{
-    text-align: right;
-}
-
 .centered{
     top: 50%;
     left: 50%;
@@ -129,11 +134,11 @@
 /******************** Typography ******************/
 
 .txt-primary{
-    color: var(--tr-primary);
+    color: var(--tr-primary-lighter);
 }
 
 .txt-secondary{
-    color: var(--tr-secondary);
+    color: var(--tr-text-secondary);
 }
 
 .txt-error{
@@ -148,6 +153,25 @@
     color: var(--tr-success);
 }
 
+.txt-gray{
+    color: var(--tr-gray);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-justify{
+    text-align: justify;
+}
 
 /* Text Sizes */
 

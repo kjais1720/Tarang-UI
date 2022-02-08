@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utilities | Tarang UI</title>
+    <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+<body>
+            
+    <div class="modal-wrapper">
+        <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
+            <div class="tr-drawer-header tr-header">
+                <h2 class="tr-drawer-heading">Components</h2>
+            </div>
+            <div class="tr-drawer-content">
+                <ul class="flex-col">
+                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Avatars
+                    </a>
+                    <a href="../Alerts/alert.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Alerts
+                    </a>
+                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Badges
+                    </a>
+                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Buttons
+                    </a>
+                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                        Cards
+                    </a>
+
+                    <a href="../Headers/header.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Headers
+                    </a>
+
+                    <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Image
+                    </a>
+                    <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Input
+                    </a>
+                    <a href="../Text-Utilities/text-utilities.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Text Utilities
+                    </a>
+                    <a href="../Lists/lists.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Lists
+                    </a>
+                    <a href="../Modals/modal.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Modals
+                    </a>
+                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Ratings
+                    </a>
+                    <a href="../Snackbars/snackbar.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Snackbars
+                    </a>
+                    <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Grid layouts
+                    </a>
+                </ul>
+                
+            </div>
+        </aside>
+    </div>
+
+    <header class="tr-header main-header d-flex f-wrap">
+        <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
+        <div class="tr-heading">
+            <a href="../../index.html">
+                <h2 class="header-brand">
+                    <img class="logo" src="../../assets/tarang-favicon-2.png" alt="Tarang Logo">
+                    <span>arang</span> <span>UI</span>
+                </h2>
+            </a>
+        </div>
+        <nav class="tr-nav d-flex">
+            <a href="#" class="tr-btn tr-btn-icon-label tr-btn-link">
+                Docs
+                <i class="fas fa-file"></i>
+            </a>
+            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+                Github
+                <i class="fab fa-github"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content d-flex">
+        <div class="component-desc flex-col">
+            <h2>Text Utilities</h2>
+            <p>
+                Text constitutes majority of your websites so Typography becomes the most important piece required to design a good website. 
+                To maintain consistency and good visual hierarchy, Tarang provides you with text utility classes which provide consistent styling across your website and provides a proper visual hierarchy.
+            </p>
+        </div>
+        <aside class="tr-drawer">
+            <h2>Variants</h2>
+            <div class="tr-drawer-content">
+                <ul class="flex-col">
+                    <button data-target="1" class="active tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Headings
+                    </button> 
+                    <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Paragraph Texts
+                    </button>        
+                    <button data-target="3" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Colored Texts
+                    </button> 
+                    <button data-target="4" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
+                        Text Alignments
+                    </button>   
+                </ul>
+                
+            </div>
+        </aside>         
+
+        <section class="main-demo-content d-flex">
+            
+            <div class="tabs-btn-list p-rel d-flex">
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
+                <div class="bottom-border"></div>
+            </div>
+
+            <div id="preview-blocks" class="preview-blocks tab d-flex">
+
+                <div id="preview-block-1" class="preview-block">          
+                    <h1>H1: lorem ipsum dolor sit amet</h1>
+                    <h2>H2: lorem ipsum dolor sit amet</h2>
+                    <h3>H3: lorem ipsum dolor sit amet</h3>
+                    <h4>H4: lorem ipsum dolor sit amet</h4>
+                </div>
+                
+                <div id="preview-block-2" class="hide preview-block">          
+                    <p class="txt-xlg">text-xlg: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg">text-lg: lorem ipsum dolor sit amet</p>
+                    <p class="txt-md">text-md: lorem ipsum dolor sit amet</p>
+                    <p class="txt-sm">txet-sm: lorem ipsum dolor sit amet</p>
+                </div>
+
+                <div id="preview-block-3" class="hide preview-block">
+                    <p class="txt-lg txt-primary">Primary-text: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg txt-secondary">Secondary-text: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg txt-gray">Gray-text: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg txt-success">Success-text: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg txt-warn">Warning-text: lorem ipsum dolor sit amet</p>
+                    <p class="txt-lg txt-error">Error-text: lorem ipsum dolor sit amet</p>
+
+                </div>
+
+                <div id="preview-block-4" class="hide preview-block">
+                    <p class="txt-lg bg-accent txt-left ">Text-Align = left: Lorem ipsum dolor sit amet, con</p>
+                    <p class="txt-lg bg-accent txt-center">Text-Align = center: Lorem ipsum dolor sit amet, con</p>
+                    <p class="txt-lg bg-accent txt-right">Text-Align = right: Lorem ipsum dolor sit amet, con</p>
+                    <p class="txt-lg bg-accent txt-justify">Text-Align = justify: Lorem ipsum dolor sit amet, con Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, harum optio? Incidunt consequuntu</p>
+                </div>
+            </div>
+
+            <div id="code-blocks" class="code-blocks tab d-flex hide">
+                <div id="code-block-1" class="code-block">
+<pre><code>
+    <h1>H1 headings</h1>
+    <h2>H2 headings</h2>
+    <h3>H3 headings</h3>
+    <h4>H4 headings</h4>
+
+</code></pre>
+                </div>
+
+                <div id="code-block-2" class="code-block hide">
+<pre><code>
+    <p class="txt-xlg">text-xlg: Paragrapgh texts</p>
+    <p class="txt-lg">text-lg: Paragrapgh texts</p>
+    <p class="txt-md">text-md: Paragrapgh texts</p>
+    <p class="txt-sm">txet-sm: Paragrapgh texts</p>
+
+</code></pre>                  
+                </div>
+                <div id="code-block-3" class="code-block hide">
+<pre><code>
+    <p class="txt-lg txt-primary">Primary-text</p>
+    <p class="txt-lg txt-secondary">Secondary-text</p>
+    <p class="txt-lg txt-gray">Gray-text</p>
+    <p class="txt-lg txt-success">Success-text</p>
+    <p class="txt-lg txt-warn">Warning-text</p>
+    <p class="txt-lg txt-error">Error-text</p>
+
+
+</code></pre>                  
+                </div>
+                <div id="code-block-4" class="code-block hide">
+<pre><code>
+    <p class="txt-lg bg-accent txt-left ">Text-Align = left</p>
+    <p class="txt-lg bg-accent txt-center">Text-Align = center</p>
+    <p class="txt-lg bg-accent txt-right">Text-Align = right</p>
+    <p class="txt-lg bg-accent txt-justify">Text-Align = justify</p>
+
+</code></pre>                  
+                </div>
+            </div>
+
+            <button class="tr-btn tr-btn-icon copy-btn"><i class="fas fa-copy"></i></button>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul class="d-flex footer-links">
+            <a target="_blank" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>    
+            </a>
+        </ul>
+        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+    </footer>
+
+    <button class="theme-toggle-btn tr-btn tr-btn-fab">
+        <i class="fas fa-moon"></i>
+    </button>
+    <!-- Highlighting the code snippets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <script src="../docs.js"></script>
+
+</body>
+</html>
