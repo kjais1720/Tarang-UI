@@ -7,11 +7,12 @@
     padding: var(--space-xs);
     border-radius: var(--space-xs);
     border: solid 2px var(--tr-primary-color);
-    color: inherit;
+    color: var(--tr-text);
     outline: solid 2px transparent;
     outline-offset: 2px;
     width: 100%;
 }
+
 
 .tr-input-item:focus{
     box-shadow: 0 0 0 3px var(--tr-primary-overlay);
