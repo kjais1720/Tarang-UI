@@ -5,6 +5,7 @@
     flex-shrink: 0;
     background-color: var(--tr-background);
     min-width: 18rem;
+    max-width: 90%;
 }
 
 .tr-drawer-header h3{
@@ -46,7 +47,7 @@
     top: 0;
     bottom: 0;
     left: -100%;
-    z-index: 99;
+    z-index: 100;
     transition: left ease 0.3s;
 }
 

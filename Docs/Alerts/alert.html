@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,10 @@
     <title>Alerts | Tarang UI</title>
     <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../docs.css">
-    <link rel="stylesheet" href="../../stylesheets/components/cards.css">
 </head>
+
 <body>
-            
+
     <div class="modal-wrapper">
         <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
             <div class="tr-drawer-header tr-header">
@@ -33,25 +34,23 @@
                     <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
                         Cards
                     </a>
-
-                    <a href="../Headers/header.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Headers
-                    </a>
-
+                    <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Grid layouts
+                    </a>    
                     <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Image
                     </a>
                     <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Input
                     </a>
-                    <a href="../Text-Utilities/text-utilities.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Text Utilities
-                    </a>
-                    <a href="../Lists/lists.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="../Lists/list.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Lists
                     </a>
                     <a href="../Modals/modal.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Modals
+                    </a>
+                    <a href="../Headers/navigation.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Navigation
                     </a>
                     <a href="../Ratings/rating.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Ratings
@@ -59,11 +58,11 @@
                     <a href="../Snackbars/snackbar.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Snackbars
                     </a>
-                    <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Grid layouts
+                    <a href="../Text-Utilities/text-utilities.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Text Utilities
                     </a>
                 </ul>
-                
+
             </div>
         </aside>
     </div>
@@ -72,10 +71,9 @@
         <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
         <div class="tr-heading">
             <a href="../../index.html">
-                <h2 class="header-brand">
-                    <img class="logo" src="../../assets/tarang-favicon-2.png" alt="Tarang Logo">
-                    <span>arang</span> <span>UI</span>
-                </h2>
+                <div class="header-brand">
+                    <img class="logo" src="../../assets/Tarang-logo.png" alt="Tarang Logo">
+                </div>
             </a>
         </div>
         <nav class="tr-nav d-flex">
@@ -83,7 +81,8 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer"
+                class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
             </a>
@@ -94,7 +93,8 @@
         <div class="component-desc flex-col">
             <h2>Alerts</h2>
             <p>
-                Alerts are very common in most of the applications. To provide feedback to use to any of his / her actions, we make use of alerts. There are multiple types of alerts availale as shown here.
+                Alerts are very common in most of the applications. To provide feedback to use to any of his / her
+                actions, we make use of alerts. There are multiple types of alerts availale as shown here.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -103,32 +103,33 @@
                 <ul class="flex-col">
                     <button data-target="1" class="tr-btn tr-btn-outline-primary toggle-variant-btn active">
                         Error Alert
-                    </button> 
+                    </button>
                     <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
                         Success Alert
-                    </button> 
+                    </button>
                     <button data-target="3" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
                         Warning Alert
-                    </button> 
+                    </button>
                     <button data-target="4" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
                         Info Alert
-                    </button>              
+                    </button>
                 </ul>
-                
+
             </div>
-        </aside>         
+        </aside>
 
         <div class="main-demo-content d-flex">
-            
+
             <div class="tabs-btn-list p-rel d-flex">
-                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent"
+                    data-target="preview-blocks">Preview</button>
                 <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
                 <div class="bottom-border"></div>
             </div>
 
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
-                <div id="preview-block-1" class="preview-block">          
+                <div id="preview-block-1" class="preview-block">
                     <div class="tr-alert d-flex tr-alert-error">
                         <div class="tr-alert-icon">
                             <i class="fas fa-times"></i>
@@ -137,7 +138,7 @@
                             <h3 class="tr-alert-type">Error</h3>
                             <p class="tr-alert-content">Lorem ipsum dolor sit amet</p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -176,12 +177,12 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
-<pre><code>
+                    <pre><code>
     <div class="tr-alert d-flex tr-alert-error">
         <div class="tr-alert-icon">
             <i class="fas fa-times"></i>
@@ -196,7 +197,7 @@
 </code></pre>
                 </div>
                 <div id="code-block-2" class="code-block hide">
-<pre><code>
+                    <pre><code>
     <div class="tr-alert d-flex tr-alert-success">
         <div class="tr-alert-icon">
             <i class="fas fa-check"></i>
@@ -207,10 +208,10 @@
         </div>
     </div>
 
-</code></pre>                  
+</code></pre>
                 </div>
                 <div id="code-block-3" class="code-block hide">
-<pre><code>
+                    <pre><code>
     <div class="tr-alert d-flex tr-alert-warning">
         <div class="tr-alert-icon">
             <i class="fas fa-exclamation"></i>
@@ -221,10 +222,10 @@
         </div>
     </div>
 
-</code></pre>     
+</code></pre>
                 </div>
                 <div id="code-block-4" class="code-block hide">
-<pre><code>
+                    <pre><code>
     <div class="tr-alert d-flex tr-alert-info">
         <div class="tr-alert-info">
             <i class="fas fa-exclamation"></i>
@@ -235,7 +236,7 @@
         </div>
     </div>
 
-</code></pre>     
+</code></pre>
                 </div>
             </div>
 
@@ -246,17 +247,20 @@
 
     <footer>
         <ul class="d-flex footer-links">
-            <a target="_blank" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720"
+                class="tr-btn tr-btn-icon">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a target="_blank" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
-                <i class="fab fa-linkedin"></i>    
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand"
+                class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>
             </a>
         </ul>
-        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer"
+                href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
     </footer>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
@@ -267,4 +271,5 @@
 
     <script src="../docs.js"></script>
 </body>
+
 </html>

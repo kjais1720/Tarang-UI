@@ -1,5 +1,4 @@
 @import url(../stylesheets/main.css);
-@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/atlas.min.css);
 
 /* Base stylesheet for all the pages */
@@ -32,6 +31,7 @@ body {
     box-shadow: var(--bs-light);
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+    gap: var(--space-xlg);
 }
 
 /* logo  */
@@ -107,9 +107,8 @@ body {
 
 .tab {
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-xlg);
+    padding: var(--space-md);
+    padding: clamp(var(--space-xs), -0.875rem + 8.33vw, var(--space-lg));
     width: 100%;
     position: relative;
     overflow: auto;
@@ -118,17 +117,21 @@ body {
 .preview-block,
 .code-block
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+.preview-block >*,
+.code-block >*{
+    margin: auto;
 }
 
 .code-blocks {
     max-height: 80vh;
     justify-content: start;
     align-items: start;
-}
-
-.preview-block{
-    width: 100%;
 }
 
 .hide {
@@ -177,6 +180,7 @@ footer {
 }
 
 footer p {
+    margin-top: var(--space-md);
     color: var(--tr-white);
     font-size: var(--fs-md);
 }

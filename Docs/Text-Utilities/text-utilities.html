@@ -17,40 +17,38 @@
             </div>
             <div class="tr-drawer-content">
                 <ul class="flex-col">
-                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent">
                         Avatars
                     </a>
-                    <a href="../Alerts/alert.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Alerts/alert.html" class="tr-btn tr-btn-transparent">
                         Alerts
                     </a>
-                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent">
                         Badges
                     </a>
-                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent">
                         Buttons
                     </a>
-                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent">
                         Cards
                     </a>
-
-                    <a href="../Headers/header.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Headers
+                    <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Grid layouts
                     </a>
-
                     <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Image
                     </a>
                     <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Input
                     </a>
-                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Text Utilities
-                    </a>
-                    <a href="../Lists/lists.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="../Lists/list.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Lists
                     </a>
                     <a href="../Modals/modal.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Modals
+                    </a>
+                    <a href="../Header/navigation.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Navigation
                     </a>
                     <a href="../Ratings/rating.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Ratings
@@ -58,11 +56,11 @@
                     <a href="../Snackbars/snackbar.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Snackbars
                     </a>
-                    <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Grid layouts
+                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Text Utilities
                     </a>
                 </ul>
-                
+
             </div>
         </aside>
     </div>
@@ -71,10 +69,9 @@
         <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
         <div class="tr-heading">
             <a href="../../index.html">
-                <h2 class="header-brand">
-                    <img class="logo" src="../../assets/tarang-favicon-2.png" alt="Tarang Logo">
-                    <span>arang</span> <span>UI</span>
-                </h2>
+                <div class="header-brand">
+                    <img class="logo" src="../../assets/Tarang-logo.png" alt="Tarang Logo">
+                </div>
             </a>
         </div>
         <nav class="tr-nav d-flex">
@@ -82,7 +79,7 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer" class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
             </a>
@@ -129,34 +126,42 @@
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
                 <div id="preview-block-1" class="preview-block">          
-                    <h1>H1: lorem ipsum dolor sit amet</h1>
-                    <h2>H2: lorem ipsum dolor sit amet</h2>
-                    <h3>H3: lorem ipsum dolor sit amet</h3>
-                    <h4>H4: lorem ipsum dolor sit amet</h4>
+                    <div class="container">
+                        <h1>H1: lorem ipsum dolor sit amet</h1>
+                        <h2>H2: lorem ipsum dolor sit amet</h2>
+                        <h3>H3: lorem ipsum dolor sit amet</h3>
+                        <h4>H4: lorem ipsum dolor sit amet</h4>
+                    </div>
                 </div>
                 
                 <div id="preview-block-2" class="hide preview-block">          
-                    <p class="txt-xlg">text-xlg: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg">text-lg: lorem ipsum dolor sit amet</p>
-                    <p class="txt-md">text-md: lorem ipsum dolor sit amet</p>
-                    <p class="txt-sm">txet-sm: lorem ipsum dolor sit amet</p>
+                    <div class="container">
+                        <p class="txt-xlg">text-xlg: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg">text-lg: lorem ipsum dolor sit amet</p>
+                        <p class="txt-md">text-md: lorem ipsum dolor sit amet</p>
+                        <p class="txt-sm">txet-sm: lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
 
                 <div id="preview-block-3" class="hide preview-block">
-                    <p class="txt-lg txt-primary">Primary-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-secondary">Secondary-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-gray">Gray-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-success">Success-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-warn">Warning-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-error">Error-text: lorem ipsum dolor sit amet</p>
+                    <div class="container">
+                        <p class="txt-lg txt-primary">Primary-text: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg txt-secondary">Secondary-text: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg txt-gray">Gray-text: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg txt-success">Success-text: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg txt-warn">Warning-text: lorem ipsum dolor sit amet</p>
+                        <p class="txt-lg txt-error">Error-text: lorem ipsum dolor sit amet</p>
+                    </div>
 
                 </div>
 
                 <div id="preview-block-4" class="hide preview-block">
-                    <p class="txt-lg bg-accent txt-left ">Text-Align = left: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-center">Text-Align = center: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-right">Text-Align = right: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-justify">Text-Align = justify: Lorem ipsum dolor sit amet, con Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, harum optio? Incidunt consequuntu</p>
+                    <div class="container">
+                        <p class="txt-lg bg-accent txt-left ">Text-Align = left: Lorem ipsum dolor sit amet, con</p>
+                        <p class="txt-lg bg-accent txt-center">Text-Align = center: Lorem ipsum dolor sit amet, con</p>
+                        <p class="txt-lg bg-accent txt-right">Text-Align = right: Lorem ipsum dolor sit amet, con</p>
+                        <p class="txt-lg bg-accent txt-justify">Text-Align = justify: Lorem ipsum dolor sit amet, con Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, harum optio? Incidunt consequuntu</p>
+                    </div>
                 </div>
             </div>
 

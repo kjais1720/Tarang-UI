@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,10 @@
     <title>Modals | Tarang UI</title>
     <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../docs.css">
-    <link rel="stylesheet" href="../../stylesheets/components/cards.css">
 </head>
+
 <body>
-            
+
     <div class="modal-wrapper">
         <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
             <div class="tr-drawer-header tr-header">
@@ -33,25 +34,23 @@
                     <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
                         Cards
                     </a>
-
                     <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Grid layouts
                     </a>
-                    <a href="../Headers/header.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
-                        Headers
-                    </a>
-
                     <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Image
                     </a>
                     <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Input
                     </a>
-                    <a href="../Lists/lists.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="../Lists/list.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Lists
                     </a>
                     <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Modals
+                    </a>
+                    <a href="../Header/navigation.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                        Navigation
                     </a>
                     <a href="../Ratings/rating.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Ratings
@@ -62,9 +61,8 @@
                     <a href="../Text-Utilities/text-utilities.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Text Utilities
                     </a>
-
                 </ul>
-                
+
             </div>
         </aside>
     </div>
@@ -73,10 +71,9 @@
         <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
         <div class="tr-heading">
             <a href="../../index.html">
-                <h2 class="header-brand">
-                    <img class="logo" src="../../assets/tarang-favicon-2.png" alt="Tarang Logo">
-                    <span>arang</span> <span>UI</span>
-                </h2>
+                <div class="header-brand">
+                    <img class="logo" src="../../assets/Tarang-logo.png" alt="Tarang Logo">
+                </div>
             </a>
         </div>
         <nav class="tr-nav d-flex">
@@ -84,7 +81,8 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer"
+                class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
             </a>
@@ -95,7 +93,10 @@
         <div class="component-desc flex-col">
             <h2>Modals</h2>
             <p>
-                A modal (also called a modal box) is a web page element that displays in front of and deactivates all other page content. To return to the main content, the user must engage with the modal by completing an action or by closing it. Modals are often used to direct users’ attention to an important action or piece of information on a website or application.
+                A modal (also called a modal box) is a web page element that displays in front of and deactivates all
+                other page content. To return to the main content, the user must engage with the modal by completing an
+                action or by closing it. Modals are often used to direct users’ attention to an important action or
+                piece of information on a website or application.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -104,58 +105,65 @@
                 <ul class="flex-col">
                     <button data-target="1" class="tr-btn tr-btn-outline-primary toggle-variant-btn active">
                         Alert Modal
-                    </button> 
+                    </button>
                     <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
                         Simple Modal
-                    </button> 
+                    </button>
                     <button data-target="3" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
                         Confirmation Modal
-                    </button> 
+                    </button>
                 </ul>
-                
+
             </div>
-        </aside>         
+        </aside>
 
         <div class="main-demo-content d-flex">
-            
+
             <div class="tabs-btn-list p-rel d-flex">
-                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent"
+                    data-target="preview-blocks">Preview</button>
                 <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
                 <div class="bottom-border"></div>
             </div>
 
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
-                <div id="preview-block-1" class="preview-block">          
+                <div id="preview-block-1" class="preview-block">
                     <article class="tr-modal-wrapper flex flex-center">
                         <div class="tr-modal-box flex-col">
-                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i
+                                        class="fas fa-times"></i></button></div>
                             <div class="tr-modal-text flex-col">
                                 <h2 class="tr-modal-heading">Alert Modal</h2>
-                                <p class="tr-modal-subtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="tr-modal-subtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
                             </div>
                             <div class="tr-modal-buttons">
                                 <button class="tr-btn tr-btn-secondary">Action 1</button>
                                 <button class="tr-btn tr-btn-primary">Action 2</button>
                             </div>
                         </div>
-                    </article> 
+                    </article>
 
                 </div>
 
                 <div id="preview-block-2" class="hide preview-block">
                     <article class="tr-modal-wrapper tr-modal-simple flex flex-center">
                         <div class="tr-modal-box flex-col">
-                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
-                
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i
+                                        class="fas fa-times"></i></button></div>
+
                             <div class="tr-modal-text flex-col">
                                 <h2>Simple Modal</h2>
                             </div>
-                
+
                             <div class="tr-modal-buttons flex-col gap-md">
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 1</button>
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 1</button>
-                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i> Item 2</button>
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i>
+                                    Item 1</button>
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i>
+                                    Item 1</button>
+                                <button class="tr-btn tr-btn-icon-label tr-btn-transparent"> <i class="fa fa-user"></i>
+                                    Item 2</button>
                             </div>
                         </div>
                     </article>
@@ -165,49 +173,52 @@
                 <div id="preview-block-3" class="hide preview-block">
                     <article class="tr-modal-wrapper tr-modal-confirmation flex flex-center">
                         <div class="tr-modal-box flex-col">
-                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i class="fas fa-times"></i></button></div>
-                
+                            <div class="tr-modal-close-btn-wrapper"><button class="tr-modal-close-btn"><i
+                                        class="fas fa-times"></i></button></div>
+
                             <div class="tr-modal-text flex-col gap-lg">
                                 <h2>Confirmation Modal</h2>
                             </div>
-                
+
                             <div class="tr-modal-options flex-col gap-md">
-                                    <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option1">
-                                        <input class="tr-input-radio" name="option" type="radio" id="option1">
-                                        Option 1
-                                    </label>
-                
-                                    <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option2">
-                                        <input class="tr-input-radio" name="option" type="radio" id="option2">
-                                        Option 2
-                                    </label>
-                
-                                    <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option3">
-                                        <input class="tr-input-radio" name="option" type="radio" id="option3">
-                                        Option 3
-                                    </label>
-                
-                                    <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option4">
-                                        <input class="tr-input-radio" name="option" type="radio" id="option4">
-                                        Option 4
-                                    </label>
-                
+                                <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option1">
+                                    <input class="tr-input-radio" name="option" type="radio" id="option1">
+                                    Option 1
+                                </label>
+
+                                <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option2">
+                                    <input class="tr-input-radio" name="option" type="radio" id="option2">
+                                    Option 2
+                                </label>
+
+                                <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option3">
+                                    <input class="tr-input-radio" name="option" type="radio" id="option3">
+                                    Option 3
+                                </label>
+
+                                <label class="tr-btn tr-btn-transparent d-flex gap-lg" for="option4">
+                                    <input class="tr-input-radio" name="option" type="radio" id="option4">
+                                    Option 4
+                                </label>
+
                             </div>
-                
+
                             <div class="tr-modal-buttons flex gap10">
-                                <button class="tr-btn tr-icon-label-btn tr-btn-error"> <i class="fa fa-times-circle"></i> Cancel</button>
-                                <button class="tr-btn tr-icon-label-btn tr-btn-success"> <i class="fa fa-check-circle"></i> Confirm</button>
+                                <button class="tr-btn tr-icon-label-btn tr-btn-error"> <i
+                                        class="fa fa-times-circle"></i> Cancel</button>
+                                <button class="tr-btn tr-icon-label-btn tr-btn-success"> <i
+                                        class="fa fa-check-circle"></i> Confirm</button>
                             </div>
                         </div>
-                    </article>                    
+                    </article>
 
                 </div>
-                
+
             </div>
 
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
-<pre><code>
+                    <pre><code>
     <article class="tr-modal-wrapper flex flex-center">
         <div class="tr-modal-box flex-col">
             <div class="tr-modal-text flex-col">
@@ -230,7 +241,7 @@
 </code></pre>
                 </div>
                 <div id="code-block-2" class="code-block hide">
-<pre><code>
+                    <pre><code>
     <article class="tr-modal-wrapper tr-modal-simple flex flex-center">
         <div class="tr-modal-box flex-col">
 
@@ -255,10 +266,10 @@
         </div>
     </article>
 
-</code></pre>                  
+</code></pre>
                 </div>
                 <div id="code-block-3" class="code-block hide">
-<pre><code>
+                    <pre><code>
     <article class="tr-modal-wrapper tr-modal-confirmation flex flex-center">
         <div class="tr-modal-box flex-col">
 
@@ -303,7 +314,7 @@
         </div>
     </article>  
 
-</code></pre>     
+</code></pre>
                 </div>
 
             </div>
@@ -317,17 +328,20 @@
 
     <footer>
         <ul class="d-flex footer-links">
-            <a target="_blank" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720"
+                class="tr-btn tr-btn-icon">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a target="_blank" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
-                <i class="fab fa-linkedin"></i>    
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand"
+                class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>
             </a>
         </ul>
-        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer"
+                href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
     </footer>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
@@ -338,4 +352,5 @@
 
     <script src="../docs.js"></script>
 </body>
+
 </html>
