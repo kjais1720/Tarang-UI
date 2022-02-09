@@ -229,6 +229,14 @@
     flex-wrap: wrap;
 }
 
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
 
 .flex-col{
     display: flex;
@@ -257,4 +265,14 @@
 
 .gap-xlg{
     gap: var(--space-xlg);
+}
+
+.list-item{
+    width: 100%;
+    padding: var(--space-xs);
+    text-align: center;
+    background-color: var(--tr-background-lighter);
+    color: var(--tr-text);
+    border: solid 1px var(--tr-primary-color);
+    border-radius: var(--space-xs);
 }
