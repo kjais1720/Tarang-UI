@@ -1,5 +1,4 @@
 @import url(../stylesheets/main.css);
-@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/atlas.min.css);
 
 /* Base stylesheet for all the pages */
@@ -32,33 +31,15 @@ body {
     box-shadow: var(--bs-light);
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+    gap: var(--space-xlg);
 }
 
-/* Designing the logo  */
+/* logo  */
 .header-brand {
-    font-family: "Montserrat Alternates", sans-serif;
-    display: flex;
-    gap: 0.3rem;
-    align-items: center;
-    position: relative;
-    right: 1.25rem;
+    width: 15rem;
+    width: clamp(10rem, -0.875rem + 20vw, 25rem);
 }
 
-.logo {
-    width: 3.5rem;
-    position: relative;
-    left: 1.25rem;
-    bottom: 0.3rem;
-}
-
-.header-brand span {
-    position: relative;
-    z-index: 1;
-}
-
-.header-brand span:nth-of-type(2) {
-    color: var(--tr-accent-color);
-}
 
 /*******************Main content**********************/
 
@@ -126,9 +107,8 @@ body {
 
 .tab {
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-xlg);
+    padding: var(--space-md);
+    padding: clamp(var(--space-xs), -0.875rem + 8.33vw, var(--space-lg));
     width: 100%;
     position: relative;
     overflow: auto;
@@ -137,17 +117,21 @@ body {
 .preview-block,
 .code-block
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+.preview-block >*,
+.code-block >*{
+    margin: auto;
 }
 
 .code-blocks {
     max-height: 80vh;
     justify-content: start;
     align-items: start;
-}
-
-.preview-block{
-    width: 100%;
 }
 
 .hide {
@@ -196,6 +180,7 @@ footer {
 }
 
 footer p {
+    margin-top: var(--space-md);
     color: var(--tr-white);
     font-size: var(--fs-md);
 }
