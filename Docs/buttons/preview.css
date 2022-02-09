@@ -1,0 +1,19 @@
+.buttons-container{
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons-container >*{
+    align-self: center;
+}
+
+.preview-block .tr-btn-fab{
+    font-size: var(--fs-lg);
+    font-weight: normal;
+    position: relative;
+    inset: unset;
+    display: grid;
+    place-content: center;
+}

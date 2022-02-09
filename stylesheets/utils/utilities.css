@@ -1,35 +1,52 @@
 /* Borders */
 
-.bd1{
+.bd-1{
     border:solid 1px;
 }
-.bd2{
+.bd-2{
     border:solid 2px;
 }
-.bd3{
+.bd-3{
     border:solid 3px;
 }
-.bd4{
+.bd-4{
     border:solid 4px;
 }
-.bd5{
+.bd-5{
     border:solid 5px;
 }
 
 .bd-red{
-    border-color:var(--tr-red);
+    border-color:var(--tr-error);
 }
 
 .bd-green{
-    border-color:var(--tr-green);
+    border-color:var(--tr-success);
 }
 
 .bd-blue{
-    border-color:var(--tr-blue);
+    border-color:var(--tr-info);
 }
 
 .bd-orange{
-    border-color:var(--tr-orange);
+    border-color:var(--tr-warning);
+}
+
+/* Background colors  */
+.bg-primary{
+    background-color: var(--tr-primary-color);
+}
+
+.bg-secondary{
+    background-color: var(--tr-secondary-color);
+}
+
+.bg-accent{
+    background-color: var(--tr-accent-color);
+}
+
+.bg-gray{
+    background-color: var(--tr-gray);
 }
 
 /* Display */
@@ -82,18 +99,6 @@
 
 /* Alignments */
 
-.text-center{
-    text-align: center;
-}
-
-.text-left{
-    text-align: left;
-}
-
-.text-right{
-    text-align: right;
-}
-
 .centered{
     top: 50%;
     left: 50%;
@@ -125,14 +130,15 @@
 }
 
 
+
 /******************** Typography ******************/
 
 .txt-primary{
-    color: var(--tr-primary);
+    color: var(--tr-primary-lighter);
 }
 
 .txt-secondary{
-    color: var(--tr-secondary);
+    color: var(--tr-text-secondary);
 }
 
 .txt-error{
@@ -147,6 +153,25 @@
     color: var(--tr-success);
 }
 
+.txt-gray{
+    color: var(--tr-gray);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-justify{
+    text-align: justify;
+}
 
 /* Text Sizes */
 
@@ -192,11 +217,44 @@
 /* Background overlay */
 .modal-wrapper.active{
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 99;
     background-color: var(--tr-gray-overlay);
 }
 
 .f-wrap{
     flex-wrap: wrap;
+}
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gap-sm{
+    gap: var(--space-sm);
+}
+
+.gap-md{
+    gap: var(--space-md);
+}
+
+.gap-lg{
+    gap: var(--space-lg);
+}
+
+.gap-xlg{
+    gap: var(--space-xlg);
 }

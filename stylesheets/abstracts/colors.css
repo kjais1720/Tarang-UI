@@ -1,9 +1,11 @@
 :root{
     --tr-primary-color:hsl(234, 71%, 25%);
     --tr-primary-darker:hsl(234, 71%, 18%);
-    
+    --tr-primary-lighter: hsl(233, 86%, 33%);
+
+    --tr-text-on-primary-color:hsl(198, 100%, 86%);
     --tr-secondary-color: hsl(234, 22%, 44%);
-    --tr-secondary-darker: hsl(234, 22%, 55%);
+    --tr-secondary-darker: hsl(234, 22%, 35%);
 
     --tr-accent-color: hsl(180, 100%, 40%);
     --tr-accent-darker: hsl(180, 100%, 30%);
@@ -14,7 +16,7 @@
     --tr-primary-overlay: hsla(234, 71%, 20%,0.4);
     --tr-gray-overlay:hsla(0, 0%, 0%, 0.3);
     --tr-accent-overlay:hsla(180, 65%, 38%, 0.4);
-
+    --tr-bg-dark-overlay: hsla(0, 0%, 0%, 0.4);
     /* Helper colors */
 
     --tr-white: hsl(0, 0%, 100%);
@@ -31,17 +33,43 @@
     --tr-box-shadow:inset 0px 0px 5px hsla(0, 0%, 0%, 0.2), inset 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.3);
     --tr-bg-teal-light: hsla(180, 100%, 25%,0.2); 
     --tr-bg-teal-dark: hsla(180, 100%, 25%,0.4); 
-    --tr-bg-dark-overlay: hsla(0, 0%, 0%, 0.4);
+    
 
     /* Background foreground */
 
     --tr-background:hsl(0, 0%, 100%);
+    --tr-background-lighter: hsl(0,0%, 90%);
     --tr-text:hsl(71, 38%, 16%);
-    --tr-text-on-dark: hsl(0, 0%, 100%);
-    --tr-text-on-light: hsl(71, 38%, 16%);
+    --tr-text-secondary:hsl(234, 22%, 44%);
 
     /* Box Shadows */
     --bs-elevated: 2px 2px 25px 10px hsla(0, 0%, 0%, 0.4);
     --bs-light: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
+
+}
+
+body.dark-mode{
+    --tr-primary-color: hsl(234, 71%, 25%);
+    --tr-text-on-primary-color: hsl(198, 100%, 86%);
+    --tr-primary-darker: hsl(233, 83%, 16%);
+    --tr-primary-lighter: hsl(233, 86%, 53%);
+
+    --tr-secondary-color: hsl(234, 23%, 44%);
+    --bg--tr-secondary-darker: hsl(234, 23%, 46%);
+
+    --bg--tr-accent-color: hsl(180, 100%, 41%);
+    --text--tr-accent-color: hsl(180, 100%, 65%);
+    --bg--tr-accent-darker: hsl(180, 100%, 30%);
+
+
+    --bg--tr-primary-overlay: hsla(234, 81%, 19%, 0.4);
+    --bg--tr-gray-overlay: hsla(0, 0%, 0%, 0.3);
+    --bg--tr-accent-overlay: hsla(180, 70%, 37%, 0.4);
+
+    /* Text and Background */
+    --tr-background: hsl(195, 7%, 11%);
+    --tr-background-lighter: hsl(195, 6%, 17%);
+    --tr-text: hsl(0, 0%, 100%);
+    --tr-text-secondary: hsl(35, 21%, 75%);
 
 }

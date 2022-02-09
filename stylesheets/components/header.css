@@ -4,15 +4,12 @@
     border-radius: 0 0 var(--space-md) var(--space-md);
     color: var(--tr-white);
     font-size: var(--fs-md);
-    gap: var(--space-sm);
-    /* Fallback value for padding */
-    padding: var(--space-sm) var(--space-lg); 
-    padding: var(--space-sm) clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    padding: var(--space-sm) var(--space-lg); /* Fallback value for padding*/
+    padding: var(--space-sm) clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
 }
 
 .tr-heading h2{
-    /* Fallback value */
-    font-size: var(--fs-xlg); 
+    font-size: var(--fs-xlg); /* Fallback value */
     font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
 }
 
@@ -47,6 +44,6 @@
     width: fit-content;
 }
 
-.tr-header-short .tr-heading{
-    display: none;
+.tr-header-short .tr-nav{
+    margin-left: unset;
 }

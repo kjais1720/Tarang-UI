@@ -11,21 +11,26 @@ h1{
 
 h2{
     font-size: var(--fs-lg);
-    font-weight:500;
+    font-weight:600;
     font-family: 'Montserrat', sans-serif;
 }
 
 h3{
     font-size: var(--fs-md);
     font-weight: 500;
-    color: var(--tr-gray);
+}
+
+h4{
+    font-size:var(--fs-sm);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 p{
     font-size: var(--fs-md);
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    color: var(--tr-secondary-color);
+    color: var(--tr-text-secondary);
 }
 
 body{

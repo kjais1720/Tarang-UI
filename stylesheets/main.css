@@ -3,6 +3,16 @@
 @import url(./abstracts/variables.css);
 @import url(./abstracts/colors.css);
 @import url(./utils/utilities.css);
+
+/* Components  */
 @import url(./components/buttons.css);
 @import url(./components/header.css);
-@import url(./components/drawer.css)
+@import url(./components/drawer.css);
+@import url(./components/cards.css);
+@import url(./components/inputs.css);
+@import url(./components/alerts.css);
+@import url(./components/avatars.css);
+@import url(./components/badges.css);
+@import url(./components/modals.css);
+@import url(./components/snackbars.css);
+@import url(./components/ratings.css);

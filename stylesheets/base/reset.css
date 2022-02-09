@@ -62,4 +62,6 @@ a{
 
 a,button{
     cursor: pointer;
+    outline: solid 2px transparent;
+    outline-offset: 2px;
 }

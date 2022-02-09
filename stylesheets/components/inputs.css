@@ -1,0 +1,38 @@
+.input-form-wrapper{
+    gap: var(--space-lg);
+    width: 100%;
+}
+
+.tr-input-item{
+    padding: var(--space-xs);
+    border-radius: var(--space-xs);
+    border: solid 2px var(--tr-primary-color);
+    color: inherit;
+    outline: solid 2px transparent;
+    outline-offset: 2px;
+    width: 100%;
+}
+
+.tr-input-item:focus{
+    box-shadow: 0 0 0 3px var(--tr-primary-overlay);
+}
+
+.input-success .tr-input-item{
+    border-color: var(--tr-success);
+}
+
+.input-success .input-validation{
+    color: var(--tr-success);
+}
+
+.input-error .tr-input-item{
+    border-color: var(--tr-error);
+}
+
+.input-error .input-validation{
+    color: var(--tr-error);
+}
+
+.tr-input-radio, .tr-input-checkbox{
+    accent-color : var(--tr-accent-color);
+}

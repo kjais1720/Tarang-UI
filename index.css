@@ -1,6 +1,10 @@
 @import url(Docs/docs.css);
 
-main.children-stacked {
+body{
+    background-color: var(--tr-background);
+}
+
+main {
     padding: var(--space-xxlg);
     padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
     gap: var(--space-xxlg);
@@ -25,12 +29,14 @@ main.children-stacked {
 .hero-text h1 {
     font-size: var(--fs-xxlg);
     font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
+    color: var(--tr-text);
 
 }
 
 .hero-text p {
     font-size: var(--fs-lg);
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-lg));
+    color:var(--tr-text-secondary);
 }
 
 /* CTA Section  */
@@ -45,17 +51,6 @@ main.children-stacked {
     text-align: center;
     max-width: 50%;
     min-width: 12.5rem;
-}
-
-.cta-wrapper .tr-btn-outline {
-    border: solid 2px var(--tr-primary-color);
-    background-color: transparent;
-    color: var(--tr-primary-color);
-}
-
-.cta-wrapper .tr-btn-outline:hover {
-    background-color: var(--tr-primary-color);
-    color: var(--tr-white);
 }
 
 .tr-btn-cta {
@@ -89,4 +84,8 @@ main.children-stacked {
 
 .get-started h2 {
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
+}
+
+@media screen {
+    
 }

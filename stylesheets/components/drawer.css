@@ -3,7 +3,7 @@
     max-height: 100vh;
     overflow: hidden;
     flex-shrink: 0;
-    background-color: var(--tr-white);
+    background-color: var(--tr-background);
     min-width: 18rem;
 }
 
