@@ -267,7 +267,13 @@
     gap: var(--space-xlg);
 }
 
-.list-item{
+
+/* Images  */
+.img-responsive{
+    max-width: 100%;
+    object-fit: cover;
+
+  .list-item{
     width: 100%;
     padding: var(--space-xs);
     text-align: center;

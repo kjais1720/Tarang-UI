@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Utilities | Tarang UI</title>
+    <title>Images | Tarang UI</title>
     <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../docs.css">
 </head>
+
 <body>
-            
+
     <div class="modal-wrapper">
         <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
             <div class="tr-drawer-header tr-header">
@@ -37,13 +39,13 @@
                         Headers
                     </a>
 
-                    <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Image
                     </a>
                     <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Input
                     </a>
-                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="../Text-Utilities/text-utilities.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Text Utilities
                     </a>
                     <a href="../Lists/lists.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
@@ -62,7 +64,7 @@
                         Grid layouts
                     </a>
                 </ul>
-                
+
             </div>
         </aside>
     </div>
@@ -82,7 +84,8 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" class="tr-btn tr-btn-icon-label tr-btn-link">
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer"
+                class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
             </a>
@@ -91,10 +94,10 @@
 
     <main class="main-content d-flex">
         <div class="component-desc flex-col">
-            <h2>Text Utilities</h2>
+            <h2>Images</h2>
             <p>
-                Text constitutes majority of your websites so Typography becomes the most important piece required to design a good website. 
-                To maintain consistency and good visual hierarchy, Tarang provides you with text utility classes which provide consistent styling across your website and provides a proper visual hierarchy.
+                Images are integral part of any website, they are really important to attract user's attention or give them some information, so handling images and making them responsive becomes really important.
+                You can use <code>`.img-responsive`</code> to make the images scale according to their container size and <code>`.tr-avatar-circle`</code> to make them Circular.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -102,104 +105,54 @@
             <div class="tr-drawer-content">
                 <ul class="flex-col">
                     <button data-target="1" class="active tr-btn tr-btn-outline-primary toggle-variant-btn">
-                        Headings
-                    </button> 
+                        Responsive Images
+                    </button>
                     <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
-                        Paragraph Texts
-                    </button>        
-                    <button data-target="3" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
-                        Colored Texts
-                    </button> 
-                    <button data-target="4" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
-                        Text Alignments
-                    </button>   
+                        Circular images
+                    </button>
                 </ul>
-                
+
             </div>
-        </aside>         
+        </aside>
 
         <section class="main-demo-content d-flex">
-            
+
             <div class="tabs-btn-list p-rel d-flex">
-                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent"
+                    data-target="preview-blocks">Preview</button>
                 <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
                 <div class="bottom-border"></div>
             </div>
 
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
-                <div id="preview-block-1" class="preview-block">          
-                    <h1>H1: lorem ipsum dolor sit amet</h1>
-                    <h2>H2: lorem ipsum dolor sit amet</h2>
-                    <h3>H3: lorem ipsum dolor sit amet</h3>
-                    <h4>H4: lorem ipsum dolor sit amet</h4>
-                </div>
-                
-                <div id="preview-block-2" class="hide preview-block">          
-                    <p class="txt-xlg">text-xlg: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg">text-lg: lorem ipsum dolor sit amet</p>
-                    <p class="txt-md">text-md: lorem ipsum dolor sit amet</p>
-                    <p class="txt-sm">txet-sm: lorem ipsum dolor sit amet</p>
+                <div id="preview-block-1" class="preview-block">
+                    <div class="img-container txt-center">
+                        <img class="img-responsive" src="https://picsum.photos/id/278/600/400" alt="">
+                    </div>
                 </div>
 
-                <div id="preview-block-3" class="hide preview-block">
-                    <p class="txt-lg txt-primary">Primary-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-secondary">Secondary-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-gray">Gray-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-success">Success-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-warn">Warning-text: lorem ipsum dolor sit amet</p>
-                    <p class="txt-lg txt-error">Error-text: lorem ipsum dolor sit amet</p>
-
+                <div id="preview-block-2" class="hide preview-block">
+                    <div class="img-container txt-center">
+                        <img class="tr-avatar-circle" src="https://picsum.photos/id/201/400/400" alt="">
+                    </div>
                 </div>
 
-                <div id="preview-block-4" class="hide preview-block">
-                    <p class="txt-lg bg-accent txt-left ">Text-Align = left: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-center">Text-Align = center: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-right">Text-Align = right: Lorem ipsum dolor sit amet, con</p>
-                    <p class="txt-lg bg-accent txt-justify">Text-Align = justify: Lorem ipsum dolor sit amet, con Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, harum optio? Incidunt consequuntu</p>
-                </div>
             </div>
 
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
-<pre><code>
-    <h1>H1 headings</h1>
-    <h2>H2 headings</h2>
-    <h3>H3 headings</h3>
-    <h4>H4 headings</h4>
+                    <pre><code>
+<img class="img-responsive" src="Put your image source here" alt="Test Image"> 
 
 </code></pre>
                 </div>
 
                 <div id="code-block-2" class="code-block hide">
-<pre><code>
-    <p class="txt-xlg">text-xlg: Paragrapgh texts</p>
-    <p class="txt-lg">text-lg: Paragrapgh texts</p>
-    <p class="txt-md">text-md: Paragrapgh texts</p>
-    <p class="txt-sm">txet-sm: Paragrapgh texts</p>
+                    <pre><code>
+<img class="tr-avatar-circle" src="Put your image source here" alt="Test Image">
 
-</code></pre>                  
-                </div>
-                <div id="code-block-3" class="code-block hide">
-<pre><code>
-    <p class="txt-lg txt-primary">Primary-text</p>
-    <p class="txt-lg txt-secondary">Secondary-text</p>
-    <p class="txt-lg txt-gray">Gray-text</p>
-    <p class="txt-lg txt-success">Success-text</p>
-    <p class="txt-lg txt-warn">Warning-text</p>
-    <p class="txt-lg txt-error">Error-text</p>
-
-
-</code></pre>                  
-                </div>
-                <div id="code-block-4" class="code-block hide">
-<pre><code>
-    <p class="txt-lg bg-accent txt-left ">Text-Align = left</p>
-    <p class="txt-lg bg-accent txt-center">Text-Align = center</p>
-    <p class="txt-lg bg-accent txt-right">Text-Align = right</p>
-    <p class="txt-lg bg-accent txt-justify">Text-Align = justify</p>
-
-</code></pre>                  
+</code></pre>
                 </div>
             </div>
 
@@ -217,10 +170,11 @@
                 <i class="fab fa-github"></i>
             </a>
             <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
-                <i class="fab fa-linkedin"></i>    
+                <i class="fab fa-linkedin"></i>
             </a>
         </ul>
-        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app"
+                class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
     </footer>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
@@ -232,4 +186,5 @@
     <script src="../docs.js"></script>
 
 </body>
+
 </html>
