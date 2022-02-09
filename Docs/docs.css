@@ -34,31 +34,12 @@ body {
     border-bottom-right-radius: 50% 20%;
 }
 
-/* Designing the logo  */
+/* logo  */
 .header-brand {
-    font-family: "Montserrat Alternates", sans-serif;
-    display: flex;
-    gap: 0.3rem;
-    align-items: center;
-    position: relative;
-    right: 1.25rem;
+    width: 15rem;
+    width: clamp(10rem, -0.875rem + 20vw, 25rem);
 }
 
-.logo {
-    width: 3.5rem;
-    position: relative;
-    left: 1.25rem;
-    bottom: 0.3rem;
-}
-
-.header-brand span {
-    position: relative;
-    z-index: 1;
-}
-
-.header-brand span:nth-of-type(2) {
-    color: var(--tr-accent-color);
-}
 
 /*******************Main content**********************/
 
