@@ -2,7 +2,7 @@
     align-self: center;
     padding: var(--space-sm);
     border-radius: var(--space-xs);
-    background-color: var(--tr-background-lighter);
+    background-color: var(--tr-background);
     gap: var(--space-xs);
     max-width: 16rem;
     position: relative;
@@ -74,6 +74,7 @@
     right: 0;
     bottom: 0;
     background-color: var(--tr-gray-overlay);
+    border-radius: inherit;
 }
 
 .text-overlay h2{
