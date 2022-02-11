@@ -1,0 +1,154 @@
+
+/* Flex layouts  */
+.d-flex{
+    display: flex;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.f-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Grid-layouts */
+.d-grid{
+    display: grid;
+}
+
+.grid-col-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-autofit-sm{
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+}
+.grid-autofit-md{
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+}
+.grid-autofit-lg{
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+}
+
+
+/* Alignments */
+
+/* Justify content  */
+.justify-c-center{
+    justify-content: center;
+}
+
+.justify-c-start{
+    justify-content: start;
+}
+
+.justify-c-end{
+    justify-content: end;
+}
+
+.justify-c-space-between{
+    justify-content: space-between;
+}
+
+.justify-c-space-around{
+    justify-content: space-around;
+}
+
+/* Align items  */
+
+.align-i-start{
+    align-items: start;
+}
+
+.align-i-center{
+    align-items: center;
+}
+
+.align-i-end{
+    align-items: end;
+}
+
+.align-i-space-between{
+    align-items: space-between;
+}
+
+.align-i-space-around{
+    align-items: space-around;
+}
+
+/* Justify items */
+
+.justify-i-start{
+    justify-items: start;
+}
+
+.justify-i-end{
+    justify-items: end;
+}
+
+.justify-i-space-between{
+    justify-items: space-between;
+}
+
+.justify-i-space-around{
+    justify-items: space-around;
+}
+
+/* Align content  */
+
+.align-c-start{
+    align-content: start;
+}
+
+.align-i-end{
+    align-content: end;
+}
+
+.align-c-space-between{
+    align-content: space-between;
+}
+
+.align-c-space-around{
+    align-content: space-around;
+}
+
+/* Align self  */
+
+.align-s-start{
+    align-self: start;
+}
+
+.align-s-center{
+    align-self: center;
+}
+
+.align-s-end{
+    align-self: end
+}

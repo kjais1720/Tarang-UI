@@ -1,0 +1,82 @@
+/******************** Typography ******************/
+
+.txt-primary{
+    color: var(--tr-primary-lighter);
+}
+
+.txt-secondary{
+    color: var(--tr-text-secondary);
+}
+
+.txt-error{
+    color: var(--tr-error);
+}
+
+.txt-warn{
+    color: var(--tr-warning);
+}
+
+.txt-success{
+    color: var(--tr-success);
+}
+
+.txt-gray{
+    color: var(--tr-gray);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-justify{
+    text-align: justify;
+}
+
+/* Text Sizes */
+
+.txt-sm{
+    font-size: var(--fs-sm);
+    line-height: var(--fs-md);
+}
+
+.txt-md{
+    font-size: var(--fs-md);
+    line-height: var(--fs-lg);
+}
+
+.txt-lg{
+    font-size: var(--fs-lg);
+    line-height: var(--fs-xlg);
+}
+
+.txt-xlg{
+    font-size: var(--fs-xlg);
+    line-height: var(--fs-xxlg);
+}
+
+/* Text weight */
+
+.txt-light{
+    font-weight: 300;
+}
+
+.txt-regular{
+    font-weight: 400;
+}
+
+.txt-semibold{
+    font-weight: 600;
+}
+
+.txt-bold{
+    font-weight: 800;
+}
+
