@@ -1,0 +1,140 @@
+/* Paddings */
+.pd-0{
+    padding: 0;
+}
+.pd-sm{
+    padding: var(--space-sm);
+}
+
+.pd-md{
+    padding: var(--space-md);
+}
+
+.pd-lg{
+    padding: var(--space-lg);
+}
+
+.pd-xlg{
+    padding: var(--space-xlg);
+}
+
+.pd-x-sm{
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
+.pd-x-md{
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.pd-x-lg{
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+.pd-x-xlg{
+    padding-left: var(--space-xlg);
+    padding-right: var(--space-xlg);
+}
+
+.pd-y-sm{
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+}
+
+.pd-y-md{
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+}
+
+.pd-y-lg{
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+}
+
+.pd-y-xlg{
+    padding-top: var(--space-xlg);
+    padding-bottom: var(--space-xlg);
+}
+
+.pd-0{
+    padding: 0;
+}
+
+/* Margins  */
+
+.mr-sm{
+    margin: var(--space-sm);
+}
+
+.mr-md{
+    margin: var(--space-md);
+}
+
+.mr-lg{
+    margin: var(--space-lg);
+}
+
+.mr-xlg{
+    margin: var(--space-xlg);
+}
+
+.mr-x-sm{
+    margin-left: var(--space-sm);
+    margin-right: var(--space-sm);
+}
+
+.mr-x-md{
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+}
+
+.mr-x-lg{
+    margin-left: var(--space-lg);
+    margin-right: var(--space-lg);
+}
+
+.mr-x-xlg{
+    margin-left: var(--space-xlg);
+    margin-right: var(--space-xlg);
+}
+
+.mr-y-sm{
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.mr-y-md{
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.mr-y-lg{
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.mr-y-xlg{
+    margin-top: var(--space-xlg);
+    margin-bottom: var(--space-xlg);
+}
+
+
+/* Gaps  */
+
+.gap-sm{
+    gap: var(--space-sm);
+}
+
+.gap-md{
+    gap: var(--space-md);
+}
+
+.gap-lg{
+    gap: var(--space-lg);
+}
+
+.gap-xlg{
+    gap: var(--space-xlg);
+}
