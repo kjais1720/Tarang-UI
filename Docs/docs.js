@@ -2,7 +2,7 @@ const setTheme = () => {
     let isDarkModeSelected = localStorage.getItem('isDarkMode');
     const themeToggleBtn = document.querySelector('.theme-toggle-btn');
     if(isDarkModeSelected===undefined){
-        localStorage.setItem(false)
+        localStorage.setItem('isDarkMode',false)
     } else{
         if(isDarkModeSelected === 'true'){
             document.body.className = '';

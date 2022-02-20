@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists | Tarang UI</title>
+    <title>Slider | Tarang UI</title>
     <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../docs.css">
 </head>
@@ -19,31 +19,31 @@
             </div>
             <div class="tr-drawer-content">
                 <ul class="flex-col">
-                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Avatars/avatar.html" class="tr-btn tr-btn-transparent">
                         Avatars
                     </a>
-                    <a href="../Alerts/alert.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Alerts/alert.html" class="tr-btn tr-btn-transparent">
                         Alerts
                     </a>
-                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Badges/badge.html" class="tr-btn tr-btn-transparent">
                         Badges
                     </a>
-                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../buttons/buttons.html" class="tr-btn tr-btn-transparent">
                         Buttons
                     </a>
-                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent tr-btn-icon-label">
+                    <a href="../Cards/card.html" class="tr-btn tr-btn-transparent">
                         Cards
                     </a>
                     <a href="../Grid/grids.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Grid layouts
-                    </a>    
+                    </a>
                     <a href="../Images/image.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Image
                     </a>
                     <a href="../input/input.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Input
                     </a>
-                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="../Lists/list.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Lists
                     </a>
                     <a href="../Modals/modal.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
@@ -55,7 +55,7 @@
                     <a href="../Ratings/rating.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Ratings
                     </a>
-                    <a href="../Slider/slider.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
+                    <a href="#" class="tr-btn tr-btn-icon-label tr-btn-transparent">
                         Sliders
                     </a>
                     <a href="../Snackbars/snackbar.html" class="tr-btn tr-btn-icon-label tr-btn-transparent">
@@ -68,14 +68,14 @@
 
             </div>
         </aside>
-    </div> 
+    </div>
 
-    <header class="tr-header main-header d-flex f-wrap gap-lg">
+    <header class="tr-header main-header d-flex f-wrap">
         <button data-target="sidebarMain" class="tr-btn tr-btn-icon hamburger"><i class="fas fa-bars"></i></button>
         <div class="tr-heading">
-            <a href="../../index.html">
+            <a href="/index.html">
                 <div class="header-brand">
-                    <img class="logo" src="../../assets/Tarang-logo.png" alt="Tarang Logo">
+                    <img class="logo" src="/assets/Tarang-logo.png" alt="Tarang Logo">
                 </div>
             </a>
         </div>
@@ -84,7 +84,7 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noreferrer noopener"
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer"
                 class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
@@ -94,22 +94,11 @@
 
     <main class="main-content d-flex">
         <div class="component-desc flex-col">
-            <h2>Lists</h2>
+            <h2>Slider</h2>
             <p>
-                Lists as they indicate themselves, are used to display list of similar items. They can be normal lists
-                with bullet points, without any bullet points or stacked lists as seen in notifications tabs across many
-                social media apps.
-                Generally we need two types of lists, side by side list and a stacked list. <br>
-                To create a side-by-side list, just create a normal unordered/ordered list and give it a class of
-                <code>d-flex</code> and a gap of your choice. <br>
-                To create a stacked list, you can use the class <code>flex-col</code> and a gap of your choice. <br>
-                To give a gap, you can use the utility classes for 4 different sizes
-                <ul>
-                    <li> <code>.gam-sm</code> for a gap of 1rem </li>
-                    <li> <code>.gam-md</code> for a gap of 1.5rem </li>
-                    <li> <code>.gam-lg</code> for a gap of 2rem </li>
-                    <li> <code>.gam-xlg</code> for a gap of 2.5rem </li>
-                </ul>
+                Slider's are another way to get Users input on a property which can take up a range of values. These are
+                usually seen in E-Commerce apps to filter products based on price ranges and in Multimedia apps to
+                control playback volume.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -117,18 +106,14 @@
             <div class="tr-drawer-content">
                 <ul class="flex-col">
                     <button data-target="1" class="tr-btn tr-btn-outline-primary toggle-variant-btn active">
-                        Spaced Lists
+                        Range slider
                     </button>
-                    <button data-target="2" class="tr-btn tr-btn-outline-primary toggle-variant-btn">
-                        Stacked Lists
-                    </button>
-
                 </ul>
 
             </div>
         </aside>
 
-        <div class="main-demo-content d-flex">
+        <section class="main-demo-content d-flex">
 
             <div class="tabs-btn-list p-rel d-flex">
                 <button class="tr-btn active tr-btn-tab tr-btn-transparent"
@@ -140,21 +125,25 @@
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
                 <div id="preview-block-1" class="preview-block">
-                    <ul class="d-flex flex-justify-center gap-sm">
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                    </ul>
-                </div>
+                    <div class="input-form-wrapper">
+                    
+                        <input list="tickmarks" step="50" class="tr-range-slider" aria-label="input-range-slider"
+                            type="range" min="0" max="500" class="tr-input-item">
+                        <datalist id="tickmarks" style="user-select: auto;">
+                            <option value="0" label="0"></option>
+                            <option value="50" label="50"></option>
+                            <option value="100" label="100"></option>
+                            <option value="150" label="150"></option>
+                            <option value="200" label="200"></option>
+                            <option value="250" label="250"></option>
+                            <option value="300" label="300"></option>
+                            <option value="350" label="350"></option>
+                            <option value="400" label="400"></option>
+                            <option value="450" label="450"></option>
+                            <option value="500" label="500"></option>
 
-                <div id="preview-block-2" class="hide preview-block">
-                    <ul class="d-flex flex-align-center flex-col gap-sm">
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                        <li class="list-item">List Item</li>
-                    </ul>
+                        </datalist>
+                    </div>
                 </div>
 
             </div>
@@ -162,23 +151,7 @@
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
                     <pre><code>
-    <ul class="d-flex gap-sm">
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-    </ul>       
-
-</code></pre>
-                </div>
-                <div id="code-block-2" class="code-block hide">
-                    <pre><code>
-    <ul class="d-flex flex-col gap-sm">
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-        <li class="list-item">List Item</li>
-    </ul> 
+    <input class="tr-range-slider" type="range" aria-label="input-range-slider" min="min-value" max="max-value" class="tr-input-item">
 
 </code></pre>
                 </div>
@@ -186,24 +159,26 @@
             </div>
 
             <button class="tr-btn tr-btn-icon copy-btn"><i class="fas fa-copy"></i></button>
-        </div>
+        </section>
 
     </main>
 
     <footer>
         <ul class="d-flex footer-links">
-            <a target="_blank" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720"
+                class="tr-btn tr-btn-icon">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a target="_blank" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand"
+                class="tr-btn tr-btn-icon">
                 <i class="fab fa-linkedin"></i>
             </a>
         </ul>
-        <p class="copywright">Created by<a target="_blank" href="https://kjais-portfolio.vercel.app"
-                class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer"
+                href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
     </footer>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
@@ -213,6 +188,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
 
     <script src="../docs.js"></script>
+
 </body>
 
 </html>

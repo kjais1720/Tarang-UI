@@ -3,10 +3,7 @@
 @import url(./base/general.css);
 @import url(./abstracts/variables.css);
 @import url(./abstracts/colors.css);
-@import url(./utils/other-utilities.css);
-@import url(./utils/spacing.css);
-@import url(./utils/text-utilities.css);
-@import url(./utils/flex-n-grids.css);
+
 
 /* Components  */
 @import url(./components/buttons.css);
@@ -20,3 +17,11 @@
 @import url(./components/modals.css);
 @import url(./components/snackbars.css);
 @import url(./components/ratings.css);
+@import url(./components/slider.css);
+
+/* Utilities  */
+
+@import url(./utils/other-utilities.css);
+@import url(./utils/spacing.css);
+@import url(./utils/text-utilities.css);
+@import url(./utils/flex-n-grids.css);
