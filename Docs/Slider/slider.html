@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="shortcut icon" href="../../assets/tarang-favicon-2.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../docs.css">
 </head>
+
 <body>
-            
+
     <div class="modal-wrapper">
         <aside id="sidebarMain" class="tr-drawer tr-drawer-modal">
             <div class="tr-drawer-header tr-header">
@@ -82,7 +84,8 @@
                 Docs
                 <i class="fas fa-file"></i>
             </a>
-            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer" class="tr-btn tr-btn-icon-label tr-btn-link">
+            <a href="https://github.com/kjais1720/Tarang-UI" target="_blank" rel="noopener noreferrer"
+                class="tr-btn tr-btn-icon-label tr-btn-link">
                 Github
                 <i class="fab fa-github"></i>
             </a>
@@ -93,7 +96,9 @@
         <div class="component-desc flex-col">
             <h2>Slider</h2>
             <p>
-                Slider's are another way to get Users input on a property which can take up a range of values. These are usually seen in E-Commerce apps to filter products based on price ranges and in Multimedia apps to control playback volume.
+                Slider's are another way to get Users input on a property which can take up a range of values. These are
+                usually seen in E-Commerce apps to filter products based on price ranges and in Multimedia apps to
+                control playback volume.
             </p>
         </div>
         <aside class="tr-drawer">
@@ -102,25 +107,42 @@
                 <ul class="flex-col">
                     <button data-target="1" class="tr-btn tr-btn-outline-primary toggle-variant-btn active">
                         Range slider
-                    </button>         
+                    </button>
                 </ul>
-                
+
             </div>
-        </aside>         
+        </aside>
 
         <section class="main-demo-content d-flex">
-            
+
             <div class="tabs-btn-list p-rel d-flex">
-                <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="tr-btn active tr-btn-tab tr-btn-transparent"
+                    data-target="preview-blocks">Preview</button>
                 <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="code-blocks">Code</button>
                 <div class="bottom-border"></div>
             </div>
 
             <div id="preview-blocks" class="preview-blocks tab d-flex">
 
-                <div id="preview-block-1" class="preview-block">          
+                <div id="preview-block-1" class="preview-block">
                     <div class="input-form-wrapper">
-                        <input class="tr-range-slider" aria-label="input-range-slider" type="range" min="50" max="200" class="tr-input-item">
+                    
+                        <input list="tickmarks" step="50" class="tr-range-slider" aria-label="input-range-slider"
+                            type="range" min="0" max="500" class="tr-input-item">
+                        <datalist id="tickmarks" style="user-select: auto;">
+                            <option value="0" label="0"></option>
+                            <option value="50" label="50"></option>
+                            <option value="100" label="100"></option>
+                            <option value="150" label="150"></option>
+                            <option value="200" label="200"></option>
+                            <option value="250" label="250"></option>
+                            <option value="300" label="300"></option>
+                            <option value="350" label="350"></option>
+                            <option value="400" label="400"></option>
+                            <option value="450" label="450"></option>
+                            <option value="500" label="500"></option>
+
+                        </datalist>
                     </div>
                 </div>
 
@@ -128,7 +150,7 @@
 
             <div id="code-blocks" class="code-blocks tab d-flex hide">
                 <div id="code-block-1" class="code-block">
-<pre><code>
+                    <pre><code>
     <input class="tr-range-slider" type="range" aria-label="input-range-slider" min="min-value" max="max-value" class="tr-input-item">
 
 </code></pre>
@@ -143,17 +165,20 @@
 
     <footer>
         <ul class="d-flex footer-links">
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720" class="tr-btn tr-btn-icon">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720"
+                class="tr-btn tr-btn-icon">
                 <i class="fab fa-twitter"></i>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand" class="tr-btn tr-btn-icon">
-                <i class="fab fa-linkedin"></i>    
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand"
+                class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>
             </a>
         </ul>
-        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer" href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
+        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer"
+                href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">Krituraj Anand</a> </p>
     </footer>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
@@ -165,4 +190,5 @@
     <script src="../docs.js"></script>
 
 </body>
+
 </html>

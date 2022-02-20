@@ -3,6 +3,7 @@
     margin: 18px 0;
     width: 100%;
     accent-color: var(--tr-accent-color); /* Fallback for other browsers */
+    background-color: transparent;
   }
   .tr-range-slider:focus {
     outline: none;
