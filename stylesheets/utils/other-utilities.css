@@ -53,6 +53,36 @@
     background-color: transparent;
 }
 
+.bg-success{
+    background-color: var(--tr-success);
+}
+
+.bg-error{
+    background-color: var(--tr-error);
+}
+
+.bg-warning{
+    background-color: var(--tr-warning);
+}
+
+.bg-lighter{
+    background-color: var(--tr-background-lighter);
+}
+
+/* Box-shadows  */
+
+.bs-lighter{
+    box-shadow: var(--bs-lighter);
+}
+
+.bs-light{
+    box-shadow: var(--bs-light);
+}
+
+.bs-dark{
+    box-shadow: var(--bs-elevated);
+}
+
 /* Display */
 
 .d-block{

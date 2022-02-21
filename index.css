@@ -11,19 +11,14 @@ main {
 }
 
 /* Hero section  */
-.hero {
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-}
 
 .hero-text {
     gap: var(--space-lg);
-    width: clamp(20rem, 40vw, 35rem);
+    flex: 1 1 20rem;
 }
 
 .hero-banner {
-    flex-shrink: 2;
-    width: clamp(20rem, 40vw, 55rem);
+    flex: 1 2 20rem;
 }
 
 .hero-text h1 {
@@ -47,10 +42,8 @@ main {
 }
 
 .cta-wrapper>* {
-    flex: 1 1 40%;
+    flex: 1 1 12rem;
     text-align: center;
-    max-width: 50%;
-    min-width: 12.5rem;
 }
 
 .tr-btn-cta {
@@ -86,6 +79,9 @@ main {
     font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
 }
 
-@media screen {
+@media screen and (max-width: 48em) {
+    .hero >*{
+        width: 100%;
+    }
     
 }

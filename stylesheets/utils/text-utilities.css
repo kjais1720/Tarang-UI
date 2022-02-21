@@ -1,5 +1,17 @@
 /******************** Typography ******************/
 
+.txt-white{
+    color: var(--tr-white);
+}
+
+.txt-color-bg{
+    color: var(--tr-background);
+}
+
+.txt-accent{
+    color: var(--tr-accent-color);
+}
+
 .txt-primary{
     color: var(--tr-primary-lighter);
 }
@@ -23,6 +35,8 @@
 .txt-gray{
     color: var(--tr-gray);
 }
+
+/* Text Alignments  */
 
 .txt-center{
     text-align: center;
