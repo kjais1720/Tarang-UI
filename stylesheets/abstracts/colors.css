@@ -45,6 +45,7 @@
     /* Box Shadows */
     --bs-elevated: 2px 2px 25px 10px hsla(0, 0%, 0%, 0.4);
     --bs-light: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
+    --bs-lighter:2px 2px 10px 2px hsla(0, 0%, 0%, 0.2);
 
 }
 

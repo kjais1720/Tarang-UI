@@ -21,8 +21,8 @@ body {
     height: 100vh;
 }
 
-.tr-drawer-main .tr-drawer-header {
-    padding: var(--space-sm) var(--space-lg);
+.tr-drawer-modal .tr-drawer-header {
+    padding-left: var(--space-lg);
 
 }
 
@@ -183,4 +183,29 @@ footer p {
     margin-top: var(--space-md);
     color: var(--tr-white);
     font-size: var(--fs-md);
+}
+
+@media screen and (max-width: 48em) {
+    .tr-header{
+        justify-content: space-between;
+        gap: var(--space-sm);
+    }
+    .tr-heading{
+        order: -1;
+    }
+    .tr-nav{
+        margin: auto;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .main-content .tr-drawer{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .preview-block{
+        justify-content: start;
+        align-items: start;
+    }
 }

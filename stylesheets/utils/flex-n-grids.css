@@ -33,6 +33,11 @@
     align-items: center;
 }
 
+.grid-center{
+    display: grid;
+    place-content: center;
+}
+
 
 /* Grid-layouts */
 .d-grid{
@@ -81,6 +86,10 @@
     justify-content: space-around;
 }
 
+.justify-c-stretch{
+    justify-content: stretch;
+}
+
 /* Align items  */
 
 .align-i-start{
@@ -103,6 +112,10 @@
     align-items: space-around;
 }
 
+.align-items-stretch{
+    align-items: stretch;
+}
+
 /* Justify items */
 
 .justify-i-start{
@@ -119,6 +132,10 @@
 
 .justify-i-space-around{
     justify-items: space-around;
+}
+
+.justify-i-stretch{
+    justify-items: stretch;
 }
 
 /* Align content  */
@@ -151,4 +168,8 @@
 
 .align-s-end{
     align-self: end
+}
+
+.align-s-stretch{
+    align-self: stretch;
 }
