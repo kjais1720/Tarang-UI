@@ -32,6 +32,33 @@
     border-color:var(--tr-warning);
 }
 
+.bd-primary{
+    border-color: var(--tr-primary-color);
+}
+
+.bd-accent{
+    border-color: var(--tr-accent-color);
+}
+
+.bd-secondary{
+    border-color: var(--tr-secondary-color);
+}
+
+/* Border radius  */
+
+.radius-xs{
+    border-radius: var(--space-xs);
+}
+.radius-sm{
+    border-radius: var(--space-sm);
+}
+.radius-md{
+    border-radius: var(--space-md);
+}
+.radius-lg{
+    border-radius: var(--space-lg);
+}
+
 /* Background colors  */
 .bg-primary{
     background-color: var(--tr-primary-color);
