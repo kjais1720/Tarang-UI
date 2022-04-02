@@ -15,6 +15,7 @@
     /* Overlays */
     --tr-primary-overlay: hsla(234, 71%, 20%,0.4);
     --tr-gray-overlay:hsla(0, 0%, 0%, 0.3);
+    --tr-white-overlay:hsla(0, 0%, 100%, 0.3);
     --tr-accent-overlay:hsla(180, 65%, 38%, 0.4);
     --tr-bg-dark-overlay: hsla(0, 0%, 0%, 0.4);
     /* Helper colors */
@@ -49,7 +50,7 @@
 
 }
 
-body.dark-mode{
+.dark-mode{
     --tr-primary-color: hsl(234, 71%, 25%);
     --tr-text-on-primary-color: hsl(198, 100%, 86%);
     --tr-primary-darker: hsl(233, 83%, 16%);
