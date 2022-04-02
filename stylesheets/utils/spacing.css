@@ -159,7 +159,7 @@
 /* Gaps  */
 
 .gap-xs{
-    padding: var(--space-xs);
+    gap: var(--space-xs);
 }
 
 .gap-sm{
@@ -228,4 +228,3 @@
 .h-50{
     height: 50%;
 }
-

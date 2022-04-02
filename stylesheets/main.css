@@ -21,7 +21,7 @@
 
 /* Utilities  */
 
+@import url(./utils/flex-n-grids.css);
 @import url(./utils/other-utilities.css);
 @import url(./utils/spacing.css);
 @import url(./utils/text-utilities.css);
-@import url(./utils/flex-n-grids.css);

@@ -122,6 +122,10 @@
     justify-items: start;
 }
 
+.justify-i-center{
+    justify-items: center;
+}
+
 .justify-i-end{
     justify-items: end;
 }
@@ -144,7 +148,11 @@
     align-content: start;
 }
 
-.align-i-end{
+.align-c-center{
+    align-content: center;
+}
+
+.align-c-end{
     align-content: end;
 }
 
