@@ -20,7 +20,7 @@
     padding: 0.2em 0.5em; /* em is needed here to scale the badge according to its font size */
     color: var(--tr-white);
     font-size: var(--fs-sm);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
 }
 
 .tr-ratings-badge-green{

@@ -5,7 +5,7 @@
 
 .tr-input-item{
     padding: var(--space-xs);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
     border: solid 2px var(--tr-primary-color);
     color: var(--tr-text);
     outline: solid 2px transparent;

@@ -1,7 +1,7 @@
 .tr-card{
     align-self: center;
     padding: var(--space-sm);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
     background-color: var(--tr-background);
     gap: var(--space-xs);
     max-width: 16rem;
@@ -11,7 +11,7 @@
 
 .tr-card-banner img{
     object-fit: cover;
-    border-radius: var(--space-xs) ;
+    border-radius: var(--radius-xs) ;
 }
 
 .tr-card-header h2{

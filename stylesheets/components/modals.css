@@ -14,7 +14,7 @@
     color: var(--tr-text);
     box-shadow: var(--bs-light);
     padding: var(--space-sm);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
     max-width: 18.75rem;
     min-width: 17rem;
     position: relative;
@@ -33,7 +33,7 @@
 }
 
 .tr-modal-buttons .tr-btn{
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
 }
 
 .tr-modal-close-btn-wrapper{

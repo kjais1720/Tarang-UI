@@ -14,7 +14,7 @@
     cursor: pointer;
     box-shadow: var(--bs-light);
     background: var(--tr-secondary-color);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
     border: 0.2px solid var(--tr-background);
   }
   .tr-range-slider::-webkit-slider-thumb {
@@ -45,7 +45,7 @@
     cursor: pointer;
     box-shadow: var(--bs-light);
     background: var(--tr-secondary-color);
-    border-radius: var(--space-xs);
+    border-radius: var(--radius-xs);
     border: 0.2px solid var(--tr-background);
   }
   .tr-range-slider::-moz-range-thumb {
