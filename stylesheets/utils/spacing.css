@@ -155,6 +155,19 @@
     margin-bottom: var(--space-xlg);
 }
 
+/* Flex margins */
+.mr-top-auto{
+    margin-top: auto;
+}
+.mr-left-auto{
+    margin-left: auto;
+}
+.mr-right-auto{
+    margin-right: auto;
+}
+.mr-bottom-auto{
+    margin-bottom: auto;
+}
 
 /* Gaps  */
 

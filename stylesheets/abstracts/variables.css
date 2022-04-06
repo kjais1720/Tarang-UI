@@ -15,15 +15,8 @@
     --radius-lg: 2rem;
     --radius-xlg: 2.5rem;
     --radius-xxlg: 4rem;
-    
-
-    /* Radius */
-
-    --radius-sm: 5px;
-    --radius-md: 10px;
-    --radius-lg: 15px;
     --radius-round: 50%;
-
+    
     /* Font Family */
 
     --ff-Heading:"Montserrat-Alternates", sans-serif;
