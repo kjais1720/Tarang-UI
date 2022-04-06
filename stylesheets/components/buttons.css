@@ -3,7 +3,7 @@
     border: none;
     background-color: var(--tr-gray);
     color: var(--tr-background);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
     font-size: var(--fs-md);
     transition: all ease 0.3s;
     font-weight: 500;
