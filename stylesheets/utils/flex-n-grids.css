@@ -52,6 +52,14 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-col-1-2{
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid-col-2-1{
+    grid-template-columns: 1fr 2fr;
+}
+
 .grid-autofit-sm{
     grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
 }
@@ -180,4 +188,10 @@
 
 .align-s-stretch{
     align-self: stretch;
+}
+
+@media screen and (max-width:42em) {
+    .grid-resp{
+        grid-template-columns: 1fr;
+    }
 }
